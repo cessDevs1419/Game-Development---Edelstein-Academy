@@ -1,0 +1,113 @@
+[gd_scene load_steps=14 format=3 uid="uid://dv3a81tuy5fbe"]
+
+[ext_resource type="Texture2D" uid="uid://bu3rk6j0s2iy6" path="res://Resources/Atlas/Beach/beach_tiles.png" id="1_eddxw"]
+[ext_resource type="Texture2D" uid="uid://ih8erp3ox4e5" path="res://Resources/Atlas/Beach/beach_objects.png" id="2_t64v1"]
+[ext_resource type="Texture2D" uid="uid://b121qru64fqg2" path="res://Resources/Atlas/Beach/beach_structures.png" id="3_xxxc7"]
+[ext_resource type="Texture2D" uid="uid://bwocnun07hk8j" path="res://Resources/Atlas/Beach/beach_trees.png" id="4_vpro3"]
+[ext_resource type="Texture2D" uid="uid://ctnvyypl8k13s" path="res://Resources/Atlas/Beach/beach_water.png" id="5_n8hr2"]
+[ext_resource type="Texture2D" uid="uid://be2n6oo3w0m7r" path="res://Resources/Atlas/Beach/Base Tiles.png" id="6_ackv6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5sx4p"]
+texture = ExtResource("1_eddxw")
+0:0/size_in_atlas = Vector2i(46, 34)
+0:0/0 = 0
+47:0/size_in_atlas = Vector2i(32, 28)
+47:0/0 = 0
+80:0/size_in_atlas = Vector2i(31, 26)
+80:0/0 = 0
+80:0/0/texture_origin = Vector2i(-19, -34)
+0:35/size_in_atlas = Vector2i(45, 32)
+0:35/0 = 0
+47:34/size_in_atlas = Vector2i(45, 31)
+47:34/0 = 0
+0:68/size_in_atlas = Vector2i(18, 19)
+0:68/0 = 0
+0:68/0/texture_origin = Vector2i(0, 64)
+19:69/size_in_atlas = Vector2i(16, 13)
+19:69/0 = 0
+19:69/0/texture_origin = Vector2i(0, 16)
+46:67/size_in_atlas = Vector2i(32, 21)
+46:67/0 = 0
+0:88/size_in_atlas = Vector2i(19, 15)
+0:88/0 = 0
+0:88/0/texture_origin = Vector2i(0, 44)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jdclf"]
+texture = ExtResource("2_t64v1")
+0:0/size_in_atlas = Vector2i(16, 26)
+0:0/0 = 0
+17:0/size_in_atlas = Vector2i(14, 24)
+17:0/0 = 0
+17:25/size_in_atlas = Vector2i(14, 10)
+17:25/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_68427"]
+texture = ExtResource("3_xxxc7")
+0:0/size_in_atlas = Vector2i(40, 40)
+0:0/0 = 0
+42:0/size_in_atlas = Vector2i(34, 43)
+42:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xbrrn"]
+texture = ExtResource("4_vpro3")
+0:0/size_in_atlas = Vector2i(26, 55)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(35, -14)
+27:0/size_in_atlas = Vector2i(25, 41)
+27:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tsi7j"]
+texture = ExtResource("5_n8hr2")
+0:0/size_in_atlas = Vector2i(30, 18)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 59)
+0:19/size_in_atlas = Vector2i(17, 10)
+0:19/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mngfc"]
+texture = ExtResource("6_ackv6")
+texture_region_size = Vector2i(64, 64)
+0:0/size_in_atlas = Vector2i(50, 29)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 63)
+
+[sub_resource type="TileSet" id="TileSet_qbjum"]
+tile_shape = 1
+tile_layout = 5
+tile_offset_axis = 1
+tile_size = Vector2i(226, 135)
+sources/0 = SubResource("TileSetAtlasSource_5sx4p")
+sources/1 = SubResource("TileSetAtlasSource_jdclf")
+sources/2 = SubResource("TileSetAtlasSource_68427")
+sources/3 = SubResource("TileSetAtlasSource_xbrrn")
+sources/4 = SubResource("TileSetAtlasSource_tsi7j")
+sources/5 = SubResource("TileSetAtlasSource_mngfc")
+
+[node name="Beach" type="Node2D"]
+
+[node name="Floor" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_qbjum")
+collision_animatable = true
+format = 2
+layer_0/y_sort_enabled = true
+layer_0/tile_data = PackedInt32Array(-65535, 1245184, 69, -65534, 1245184, 69, 65535, 5, 0)
+
+[node name="Structures" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_qbjum")
+format = 2
+layer_0/tile_data = PackedInt32Array(131068, 2, 0, -327687, 2752514, 0)
+
+[node name="Decors" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_qbjum")
+format = 2
+layer_0/tile_data = PackedInt32Array(131071, 1114113, 0, 393214, 1114113, 25, 327674, 1114113, 25, -327684, 1, 0, -131072, 1114113, 25, 327684, 3080192, 0, -458748, 5242880, 0, 327682, 3080192, 0, 196612, 3080192, 0, -65533, 1245184, 69, -131069, 0, 88, -196605, 0, 68)
+
+[node name="Water" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_qbjum")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65537, 4, 0)
+
+[node name="Trees" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_qbjum")
+format = 2
+layer_0/tile_data = PackedInt32Array(-458752, 1769475, 0, 131064, 3, 0)
