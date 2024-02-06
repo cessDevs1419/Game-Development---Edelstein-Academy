@@ -13,12 +13,13 @@ script = ExtResource("1_4idls")
 position = Vector2(-6.27815, -2.2995)
 script = ExtResource("2_clvjn")
 
+[node name="Player" parent="." instance=ExtResource("3_d028f")]
+position = Vector2(5, 4)
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(582, 406)
 zoom = Vector2(0.3, 0.3)
 
 [node name="IndicatorsTileMap" parent="." instance=ExtResource("4_ga2xw")]
 
-[node name="Player" parent="." instance=ExtResource("3_d028f")]
-
-[connection signal="mouse_clicked" from="Player" to="IndicatorsTileMap" method="_on_player_mouse_clicked"]
+[connection signal="input_event" from="Player" to="IndicatorsTileMap" method="_on_player_input_event"]
