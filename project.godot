@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="edelstein-academy"
+<<<<<<< Updated upstream
 
 run/main_scene="res://ui/ingame_interface/ingame_interface.tscn"
 
+=======
+run/main_scene="res://Ui/Ingame_interface/Ingame_interface.tscn"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 

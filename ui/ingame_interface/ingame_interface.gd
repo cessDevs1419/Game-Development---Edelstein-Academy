@@ -6,14 +6,18 @@ var vbox_container
 var avatar_icon
 
 @onready var status_bar = preload("res://assets/components/status_bar/status_bar.tscn").instantiate()
-@onready var characters_selection_scene = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
+@onready var headers = preload("res://Assets/Components/Header_container/Headers.tscn").instantiate()
+#@onready var characters_selection_scene = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
 
 func _ready():
-	$CanvasLayer.add_child(status_bar)
+	var ui = $CanvasLayer
+	ui.add_child(status_bar)
+	ui.add_child(headers)
 	avatar_icon = Image.load_from_file("res://assets/sprites/sample_avatar.png")
 	status_bar.update_avatar(avatar_icon)
-	status_bar.update_contents( 'Kwan', '69')
-	status_bar.update_range(70)
+	status_bar.update_contents( 'kwan', '69')
+	status_bar.update_range(200, 300)
+	headers.change_label('Begin Match')
 	
 	characters = [
 		{"id": "123", "name": "John", "level": 42, "avatar": "res://assets/sprites/sample_avatar.png"},
@@ -21,9 +25,9 @@ func _ready():
 		{"id": "125", "name": "Jennifer", "level": 69, "avatar": "res://assets/sprites/sample_avatar.png"},
 	]
 
-	for character in characters:
-		var character_instance = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
-		_add_characters(character_instance, character["id"], character["name"], str(character["level"]), character["avatar"])
+	#for character in characters:
+		#var character_instance = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
+		#_add_characters(character_instance, character["id"], character["name"], str(character["level"]), character["avatar"])
 
 func _process(delta):
 	pass
