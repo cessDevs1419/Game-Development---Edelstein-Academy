@@ -14,9 +14,13 @@ func _ready():
 	ui.add_child(status_bar)
 	ui.add_child(headers)
 	avatar_icon = Image.load_from_file("res://assets/sprites/sample_avatar.png")
+	
+	#status bar 
 	status_bar.update_avatar(avatar_icon)
 	status_bar.update_contents( 'kwan', '69')
 	status_bar.update_range(200, 300)
+	
+	#custom header 
 	headers.change_label('Begin Match')
 	
 	characters = [

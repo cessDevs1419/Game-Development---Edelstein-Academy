@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ty4hmpdson08"]
 
-[ext_resource type="Script" path="res://Assets/Components/Status_bar/Status_bar.gd" id="1_tx8nb"]
+[ext_resource type="Script" path="res://Assets/Components/Status_bar/Status_Bar.gd" id="1_001np"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3avk"]
 bg_color = Color(0.196078, 0.156863, 0, 1)
@@ -78,7 +78,7 @@ offset_right = -797.0
 offset_bottom = -537.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tx8nb")
+script = ExtResource("1_001np")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
