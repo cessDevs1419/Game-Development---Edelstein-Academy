@@ -10,7 +10,7 @@ var avatars
 var texture 
 var healthbar
 
-var global_function = preload("res://assets/scripts/functions.gd").new()
+var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 
 func _ready():
 	#namenode = get_node("Panel/Panel/Title_container/Name_holder")

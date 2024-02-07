@@ -11,7 +11,7 @@ var selected
 var avatarButton
 var avatarPannel
 
-var global_function = preload("res://assets/scripts/functions.gd").new()
+var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 
 func _ready():
 	title_container = get_node("Character_panel/Title_container")
