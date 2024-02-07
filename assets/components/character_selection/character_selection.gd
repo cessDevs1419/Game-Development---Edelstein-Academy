@@ -1,6 +1,5 @@
 extends Control
 
-class_name CharacterSelection
 
 var character_panel
 var title_container 

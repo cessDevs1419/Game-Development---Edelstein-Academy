@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://ty4hmpdson08"]
+[gd_scene load_steps=8 format=3 uid="uid://ty4hmpdson08"]
 
-[ext_resource type="Script" path="res://Assets/Components/Status_bar/Status_Bar.gd" id="1_001np"]
+[ext_resource type="Script" path="res://Assets/Components/Status_bar/Status_bar.gd" id="1_tx8nb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3avk"]
 bg_color = Color(0.196078, 0.156863, 0, 1)
@@ -47,7 +47,7 @@ corner_radius_bottom_right = 90
 corner_radius_bottom_left = 90
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jhe5j"]
-bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+bg_color = Color(0.184314, 0.184314, 0.184314, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -55,11 +55,6 @@ border_width_bottom = 2
 border_color = Color(0.498039, 0.376471, 0.168627, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ui88"]
-bg_color = Color(0.137255, 0.137255, 0.137255, 1)
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
@@ -78,7 +73,7 @@ offset_right = -797.0
 offset_bottom = -537.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_001np")
+script = ExtResource("1_tx8nb")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -140,42 +135,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_jhe5j")
 z_index = 1
 layout_mode = 0
 offset_left = 2.0
-offset_top = 26.0
+offset_top = 27.0
 offset_right = 229.0
-offset_bottom = 51.0
-theme_override_styles/background = SubResource("StyleBoxFlat_6ui88")
+offset_bottom = 52.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_l1gu2")
-max_value = 1e+09
-value = 1e+07
+value = 25.0
 show_percentage = false
-
-[node name="Progress" type="Label" parent="Panel/Panel"]
-layout_mode = 0
-offset_left = 250.0
-offset_top = 61.0
-offset_right = 280.0
-offset_bottom = 75.0
-theme_override_font_sizes/font_size = 10
-text = "281"
-horizontal_alignment = 1
-text_overrun_behavior = 3
-
-[node name="Label" type="Label" parent="Panel/Panel"]
-layout_mode = 0
-offset_left = 279.0
-offset_top = 61.0
-offset_right = 284.0
-offset_bottom = 75.0
-theme_override_font_sizes/font_size = 10
-text = "/"
-
-[node name="Total" type="Label" parent="Panel/Panel"]
-layout_mode = 0
-offset_left = 282.0
-offset_top = 61.0
-offset_right = 314.0
-offset_bottom = 75.0
-theme_override_font_sizes/font_size = 10
-text = "32023232323"
-horizontal_alignment = 1
-text_overrun_behavior = 3

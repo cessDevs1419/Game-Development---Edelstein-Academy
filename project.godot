@@ -11,7 +11,9 @@ config_version=5
 [application]
 
 config/name="edelstein-academy"
+
 run/main_scene="res://ui/ingame_interface/ingame_interface.tscn"
+
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
