@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce4mrlpag7y26"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mq26k"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 0.54902)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="OverviewPanel" type="Node"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 17.0
+offset_top = 147.0
+offset_right = 388.0
+offset_bottom = 317.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mq26k")

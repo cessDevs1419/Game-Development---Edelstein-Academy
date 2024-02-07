@@ -5,9 +5,11 @@ var characters
 var canvasLayer
 var hbox_container
 var avatar_icon
+var tile_icon
 
 @onready var status_bar = preload("res://Assets/Components/Status_Bar/Status_Bar.tscn").instantiate()
 @onready var headers = preload("res://Assets/Components/Header_Container/Headers.tscn").instantiate()
+@onready var tile = preload("res://Assets/Components/Tile_Container/Tile_Container.tscn").instantiate()
 @onready var button_icons = preload("res://Assets/Components/Icon_Button/Icon_Button.tscn")
 #@onready var characters_selection_scene = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
 
@@ -15,9 +17,11 @@ func _ready():
 	ui = $CanvasLayer
 	hbox_container = $CanvasLayer/HBoxContainer
 	avatar_icon = Image.load_from_file("res://Assets/Sprites/Sample_Avatar.png")
+	tile_icon = Image.load_from_file("res://Assets/Sprites/Tile_Sample.png")
 	
 	ui.add_child(status_bar)
 	ui.add_child(headers)
+	ui.add_child(tile)
 	
 	var button1 = button_icons.instantiate()
 	button1.icon("settings")
@@ -25,7 +29,6 @@ func _ready():
 	var button2 = button_icons.instantiate()
 	button2.icon("profile")
 	hbox_container.add_child(button2)
-	
 	
 	
 	#status bar 
@@ -36,6 +39,10 @@ func _ready():
 	#custom header 
 	headers.change_label('Begin Match')
 	
+	#tile container
+	tile.tile_types(tile_icon)
+	tile.tile_count(23)
+		
 	characters = [
 		{"id": "123", "name": "John", "level": 42, "avatar": "res://assets/sprites/sample_avatar.png"},
 		{"id": "124", "name": "Jane", "level": 35, "avatar": "res://assets/sprites/sample_avatar.png"},

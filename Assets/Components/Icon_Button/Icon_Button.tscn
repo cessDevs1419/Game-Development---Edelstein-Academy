@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Assets/Components/Icon_Button/Icon_Button.gd" id="1_4x1bw"]
 
 [node name="IconButton" type="TextureButton"]
-anchors_preset = -1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -1152.0

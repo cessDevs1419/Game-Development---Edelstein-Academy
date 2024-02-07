@@ -14,7 +14,6 @@ func _pressed():
 func icon(icon: String):
 	match icon:
 		"settings":
-			print(icon)
 			texture_normal = preload("res://Assets/Sprites/Setting.png")
 		"profile":
 			texture_normal = preload("res://Assets/Sprites/Avatar.png")

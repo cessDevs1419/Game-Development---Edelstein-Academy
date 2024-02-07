@@ -8,7 +8,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func update_avatar(
+func update_image(
 		avatars: Node, 
 		avatar_path: Image,
 		scaleX: float,
