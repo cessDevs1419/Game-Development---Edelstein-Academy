@@ -12,7 +12,20 @@ script = ExtResource("1_pl2i4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -212.5)
 shape = SubResource("RectangleShape2D_x2awb")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Player" type="Sprite2D" parent="."]
+z_index = 999
+texture_filter = 1
 position = Vector2(1.5, -209.5)
 texture = ExtResource("2_k1avd")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -99.0
+offset_top = -456.0
+offset_right = 102.0
+offset_bottom = 31.0
+
+[connection signal="gui_input" from="Control" to="." method="_on_control_gui_input"]
