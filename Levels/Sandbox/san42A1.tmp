@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkqgvxuh62xyv"]
+
+[ext_resource type="Script" path="res://Levels/Sandbox/sandbox.gd" id="1_4idls"]
+[ext_resource type="PackedScene" uid="uid://b4rld4i4ulysp" path="res://Levels/Sandbox/tilemap_sandbox.tscn" id="1_4mxyu"]
+[ext_resource type="Script" path="res://Levels/Sandbox/tilemap_sandbox.gd" id="2_clvjn"]
+[ext_resource type="PackedScene" uid="uid://d2myqc56b5m3n" path="res://Characters/Player/player.tscn" id="3_d028f"]
+[ext_resource type="PackedScene" uid="uid://ttsxixcrrutg" path="res://Levels/Overlays/Indicators/tile_map_indicators.tscn" id="4_ga2xw"]
+
+[node name="Sandbox" type="Node2D"]
+script = ExtResource("1_4idls")
+
+[node name="SandboxTileMap" parent="." instance=ExtResource("1_4mxyu")]
+position = Vector2(-6.27815, -2.2995)
+script = ExtResource("2_clvjn")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(582, 406)
+zoom = Vector2(0.3, 0.3)
+
+[node name="IndicatorsTileMap" parent="." instance=ExtResource("4_ga2xw")]
+
+[node name="Player" parent="." instance=ExtResource("3_d028f")]
+
+[connection signal="mouse_clicked" from="Player" to="IndicatorsTileMap" method="_on_player_mouse_clicked"]
