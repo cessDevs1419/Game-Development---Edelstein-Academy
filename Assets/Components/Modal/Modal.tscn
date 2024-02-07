@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://4ijt7pjb11jm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_smh1j"]
+bg_color = Color(0.133333, 0.133333, 0.133333, 0.87451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tdaqo"]
+bg_color = Color(0.137255, 0.054902, 0.0313726, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.513726, 0.411765, 0.0431373, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Modal" type="Control"]
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 644.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_smh1j")
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 189.0
+offset_right = 780.0
+offset_bottom = 427.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_tdaqo")

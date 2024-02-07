@@ -10,6 +10,7 @@ var tile_icon
 @onready var status_bar = preload("res://Assets/Components/Status_Bar/Status_Bar.tscn").instantiate()
 @onready var headers = preload("res://Assets/Components/Header_Container/Headers.tscn").instantiate()
 @onready var tile = preload("res://Assets/Components/Tile_Container/Tile_Container.tscn").instantiate()
+@onready var modal = preload("res://Assets/Components/Modal/Modal.tscn").instantiate()
 @onready var button_icons = preload("res://Assets/Components/Icon_Button/Icon_Button.tscn")
 #@onready var characters_selection_scene = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
 
@@ -22,6 +23,9 @@ func _ready():
 	ui.add_child(status_bar)
 	ui.add_child(headers)
 	ui.add_child(tile)
+	
+	#call to display modal
+	#ui.add_child(modal)
 	
 	var button1 = button_icons.instantiate()
 	button1.icon("settings")
