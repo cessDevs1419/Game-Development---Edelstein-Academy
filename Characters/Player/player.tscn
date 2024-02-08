@@ -24,7 +24,7 @@ texture = ExtResource("2_k1avd")
 layout_mode = 3
 anchors_preset = 0
 offset_left = -99.0
-offset_top = -456.0
+offset_top = -92.0
 offset_right = 102.0
 offset_bottom = 31.0
 
