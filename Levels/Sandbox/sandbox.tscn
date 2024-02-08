@@ -21,4 +21,7 @@ zoom = Vector2(0.3, 0.3)
 
 [node name="Player" parent="." instance=ExtResource("3_d028f")]
 
-[connection signal="mouse_clicked" from="Player" to="IndicatorsTileMap" method="_on_player_mouse_clicked"]
+[connection signal="unit_moved" from="Player" to="." method="_on_player_unit_moved"]
+[connection signal="unit_moved" from="Player" to="IndicatorsTileMap" method="_on_player_unit_moved"]
+[connection signal="unit_selected" from="Player" to="." method="_on_player_unit_selected"]
+[connection signal="unit_selected" from="Player" to="IndicatorsTileMap" method="_on_unit_selected"]

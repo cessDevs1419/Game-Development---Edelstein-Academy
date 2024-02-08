@@ -12,7 +12,12 @@ func _process(delta):
 	pass
 
 
-func _on_player_mouse_clicked(position):
+func _on_unit_selected(position):
 	var tile_position = local_to_map(position)
-	
-	tile_map.set_cell(0, tile_position, 0, Vector2i(2, 1))
+	tile_map.set_cell(0, tile_position, 1, Vector2i(0, 0))
+
+
+func _on_player_unit_moved(original_position, target_position):
+	var tile_position = local_to_map(original_position);
+	tile_map.set_cell(0, tile_position, -1)
+	pass # Replace with function body.
