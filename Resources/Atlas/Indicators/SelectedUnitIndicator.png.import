@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccsrbg8aqpym"
-path="res://.godot/imported/Selected Tile_Unit.png-27d59e228e5dfb8d9fd030e49059db6d.ctex"
+uid="uid://bamet2nxoisin"
+path="res://.godot/imported/SelectedUnitIndicator.png-05bc3ce891a371f043a9f163dfa49e80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Atlas/Indicators/Selected Tile_Unit.png"
-dest_files=["res://.godot/imported/Selected Tile_Unit.png-27d59e228e5dfb8d9fd030e49059db6d.ctex"]
+source_file="res://Resources/Atlas/Indicators/SelectedUnitIndicator.png"
+dest_files=["res://.godot/imported/SelectedUnitIndicator.png-05bc3ce891a371f043a9f163dfa49e80.ctex"]
 
 [params]
 
