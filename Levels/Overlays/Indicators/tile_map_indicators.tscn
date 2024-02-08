@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ttsxixcrrutg"]
+[gd_scene load_steps=9 format=3 uid="uid://ttsxixcrrutg"]
 
 [ext_resource type="Texture2D" uid="uid://foavjbk80a1s" path="res://Resources/Atlas/Indicators/MovementIndicator.png" id="1_u7ldq"]
 [ext_resource type="Script" path="res://Levels/Overlays/Indicators/tile_map_indicators.gd" id="2_0gmi4"]
 [ext_resource type="Texture2D" uid="uid://bamet2nxoisin" path="res://Resources/Atlas/Indicators/SelectedUnitIndicator.png" id="2_7pa34"]
+[ext_resource type="Texture2D" uid="uid://b472ryjacsggw" path="res://Resources/Atlas/Indicators/PlayerUnitIndicator.png" id="3_7ssqq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_da03t"]
 texture = ExtResource("1_u7ldq")
@@ -15,6 +16,11 @@ texture = ExtResource("2_7pa34")
 texture_region_size = Vector2i(300, 170)
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqlwc"]
+texture = ExtResource("3_7ssqq")
+texture_region_size = Vector2i(300, 170)
+0:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_wd2i2"]
 tile_shape = 1
 tile_layout = 5
@@ -22,6 +28,7 @@ tile_offset_axis = 1
 tile_size = Vector2i(300, 170)
 sources/0 = SubResource("TileSetAtlasSource_da03t")
 sources/1 = SubResource("TileSetAtlasSource_0i723")
+sources/2 = SubResource("TileSetAtlasSource_dqlwc")
 
 [node name="IndicatorsTileMap" type="TileMap"]
 y_sort_enabled = true
