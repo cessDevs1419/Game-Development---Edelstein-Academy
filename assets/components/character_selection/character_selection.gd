@@ -11,7 +11,7 @@ var selected
 var avatarButton
 var avatarPannel
 
-var global_function = preload("res://assets/scripts/functions.gd").new()
+var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 
 func _ready():
 	title_container = get_node("Character_panel/Title_container")
@@ -35,8 +35,8 @@ func _character_content(character_id_param: String, character_name_param: String
 	update_avatar(avatar_icon)
 	
 func update_avatar(avatar_path):
-	global_function.update_avatar(avatarButton, avatar_path, .1, .1, 35, 25)
-	global_function.update_avatar(avatarPannel, avatar_path, .1, .1, 35, 25)
+	global_function.update_image(avatarButton, avatar_path, .1, .1, 35, 25)
+	global_function.update_image(avatarPannel, avatar_path, .1, .1, 35, 25)
 
 func update_contents(nameValue:String, lvlcountValue:String):
 	global_function.update_contents(namenode, nameValue, lvlcountnode, lvlcountValue)

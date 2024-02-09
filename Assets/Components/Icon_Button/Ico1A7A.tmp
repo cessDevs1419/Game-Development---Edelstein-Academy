@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c38rx4qoin7y0"]
+
+[ext_resource type="Script" path="res://Assets/Components/Icon_Button/Icon_Button.gd" id="1_4x1bw"]
+
+[node name="IconButton" type="TextureButton"]
+toggle_mode = true
+stretch_mode = 3
+script = ExtResource("1_4x1bw")

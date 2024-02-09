@@ -8,7 +8,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func update_avatar(
+func update_image(
 		avatars: Node, 
 		avatar_path: Image,
 		scaleX: float,
@@ -25,3 +25,11 @@ func update_avatar(
 func update_contents(namenode: Node, nameValue:String, lvlcountnode: Node, lvlcountValue:String):
 	#namenode.text = nameValue
 	lvlcountnode.text = lvlcountValue
+
+func get_data():
+	
+	pass
+	
+func set_data():
+	
+	pass

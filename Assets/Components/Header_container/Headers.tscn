@@ -1,6 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bulrtsdppkj4v"]
+[gd_scene load_steps=10 format=3 uid="uid://bulrtsdppkj4v"]
 
-[ext_resource type="Script" path="res://Assets/Components/Header_container/Headers.gd" id="1_8wxo1"]
+[ext_resource type="Script" path="res://Assets/Components/Header_Container/Headers.gd" id="1_8wxo1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_72h5v"]
 
 [sub_resource type="Gradient" id="Gradient_e2pv5"]
 offsets = PackedFloat32Array(0, 0.8)
@@ -14,11 +16,12 @@ gradient = SubResource("Gradient_e2pv5")
 texture = SubResource("GradientTexture1D_kf3cu")
 
 [sub_resource type="Gradient" id="Gradient_khs6d"]
-offsets = PackedFloat32Array(0.157025, 0.917355)
-colors = PackedColorArray(0.192157, 0.192157, 0.192157, 1, 0.243137, 0.243137, 0.243137, 0.117647)
+offsets = PackedFloat32Array(0.222973, 1)
+colors = PackedColorArray(0.192157, 0.192157, 0.192157, 1, 0.137255, 0.137255, 0.137255, 0)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_puvp2"]
 gradient = SubResource("Gradient_khs6d")
+use_hdr = true
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_we3vu"]
 texture = SubResource("GradientTexture1D_puvp2")
@@ -40,27 +43,41 @@ corner_radius_bottom_left = 15
 [node name="Headers" type="Node"]
 script = ExtResource("1_8wxo1")
 
-[node name="Panel" type="Panel" parent="."]
-offset_left = 374.0
-offset_top = 32.0
-offset_right = 601.0
-offset_bottom = 94.0
+[node name="Parent" type="Panel" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -207.0
+offset_top = 4.0
+offset_right = 205.0
+offset_bottom = 136.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_72h5v")
+
+[node name="Panel" type="Panel" parent="Parent"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 25.0
+offset_right = 220.0
+offset_bottom = 87.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_q43sj")
 
-[node name="Panel2" type="Panel" parent="."]
-offset_left = 601.0
-offset_top = 32.0
-offset_right = 828.0
-offset_bottom = 94.0
+[node name="Panel2" type="Panel" parent="Parent"]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 25.0
+offset_right = 429.0
+offset_bottom = 87.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_we3vu")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-offset_left = 522.0
-offset_top = 42.0
-offset_right = 658.0
-offset_bottom = 82.0
+[node name="PanelContainer" type="PanelContainer" parent="Parent"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 35.0
+offset_right = 280.0
+offset_bottom = 75.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_lent4")
 
-[node name="Label" type="Label" parent="PanelContainer"]
+[node name="Label" type="Label" parent="Parent/PanelContainer"]
 layout_mode = 2
 text = "Begin Match"
