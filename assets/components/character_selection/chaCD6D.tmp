@@ -1,0 +1,121 @@
+[gd_scene load_steps=6 format=3 uid="uid://hsgt0ni7ugl1"]
+
+[ext_resource type="Script" path="res://assets/components/character-selection/character_selection.gd" id="1_6yfs4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwttn"]
+bg_color = Color(0.717647, 0.780392, 1, 0.498039)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5uric"]
+bg_color = Color(0.717647, 0.780392, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jbtjf"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8meye"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 875.0
+offset_top = 3.0
+offset_right = -34.0
+offset_bottom = -581.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6yfs4")
+
+[node name="Character_panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = -3.0
+offset_right = 255.0
+offset_bottom = 60.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gwttn")
+
+[node name="Panel" type="Panel" parent="Character_panel"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 243.0
+offset_bottom = 61.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5uric")
+
+[node name="Avatar" type="Panel" parent="Character_panel/Panel"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 65.0
+offset_bottom = 58.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jbtjf")
+
+[node name="Title_container" type="Panel" parent="Character_panel/Panel"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 6.0
+offset_right = 241.0
+offset_bottom = 57.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8meye")
+
+[node name="Name_holder" type="Label" parent="Character_panel/Panel/Title_container"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 15.0
+offset_right = 112.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "NAME HERE ! ! "
+clip_text = true
+text_overrun_behavior = 3
+uppercase = true
+
+[node name="Line2D" type="Line2D" parent="Character_panel/Panel/Title_container"]
+position = Vector2(116, 16)
+points = PackedVector2Array(0, 4, 0, 9, 0, 13, 0, 18)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Lvl" type="Label" parent="Character_panel/Panel/Title_container"]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 22.0
+offset_right = 139.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "LVL."
+
+[node name="Level_count" type="Label" parent="Character_panel/Panel/Title_container"]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 21.0
+offset_right = 154.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "69"
+text_overrun_behavior = 3
+uppercase = true

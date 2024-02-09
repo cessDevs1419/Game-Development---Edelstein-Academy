@@ -1,0 +1,181 @@
+[gd_scene load_steps=9 format=3 uid="uid://ty4hmpdson08"]
+
+[ext_resource type="Script" path="res://Assets/Components/Status_bar/Status_Bar.gd" id="1_001np"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3avk"]
+bg_color = Color(0.196078, 0.156863, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.498039, 0.376471, 0.168627, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y1mbc"]
+bg_color = Color(0.196078, 0.156863, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnukc"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.498039, 0.376471, 0.168627, 1)
+corner_radius_top_left = 90
+corner_radius_top_right = 90
+corner_radius_bottom_right = 90
+corner_radius_bottom_left = 90
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_43w5g"]
+bg_color = Color(0.745098, 0.690196, 0.270588, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.498039, 0.376471, 0.168627, 1)
+corner_radius_top_left = 90
+corner_radius_top_right = 90
+corner_radius_bottom_right = 90
+corner_radius_bottom_left = 90
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jhe5j"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.498039, 0.376471, 0.168627, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ui88"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1gu2"]
+bg_color = Color(0.466667, 0.0745098, 0.0196078, 1)
+corner_radius_bottom_left = 10
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = 18.0
+offset_right = -797.0
+offset_bottom = -537.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_001np")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 333.0
+offset_bottom = 89.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_p3avk")
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 330.0
+offset_bottom = 84.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y1mbc")
+
+[node name="Avatar" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 74.0
+offset_bottom = 67.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xnukc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel/Panel/Avatar"]
+
+[node name="Level_count_container" type="Panel" parent="Panel/Panel/Avatar"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 44.0
+offset_right = 48.0
+offset_bottom = 72.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_43w5g")
+
+[node name="Level_count" type="Label" parent="Panel/Panel/Avatar/Level_count_container"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 27.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "69"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+uppercase = true
+
+[node name="Status_container" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 8.0
+offset_right = 316.0
+offset_bottom = 61.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jhe5j")
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel/Panel/Status_container"]
+z_index = 1
+layout_mode = 0
+offset_left = 2.0
+offset_top = 26.0
+offset_right = 229.0
+offset_bottom = 51.0
+theme_override_styles/background = SubResource("StyleBoxFlat_6ui88")
+theme_override_styles/fill = SubResource("StyleBoxFlat_l1gu2")
+max_value = 1e+09
+value = 1e+07
+show_percentage = false
+
+[node name="Progress" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 61.0
+offset_right = 280.0
+offset_bottom = 75.0
+theme_override_font_sizes/font_size = 10
+text = "281"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Label" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 61.0
+offset_right = 284.0
+offset_bottom = 75.0
+theme_override_font_sizes/font_size = 10
+text = "/"
+
+[node name="Total" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 282.0
+offset_top = 61.0
+offset_right = 314.0
+offset_bottom = 75.0
+theme_override_font_sizes/font_size = 10
+text = "32023232323"
+horizontal_alignment = 1
+text_overrun_behavior = 3

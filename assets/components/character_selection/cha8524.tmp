@@ -1,0 +1,161 @@
+[gd_scene load_steps=6 format=3 uid="uid://hsgt0ni7ugl1"]
+
+[ext_resource type="Script" path="res://assets/components/character_selection/character_selection.gd" id="1_hxf7e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vs3lp"]
+bg_color = Color(0.717647, 0.780392, 1, 0.592157)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jbtjf"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fuxam"]
+bg_color = Color(0.717647, 0.780392, 1, 0.592157)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8meye"]
+bg_color = Color(1, 1, 1, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 789.0
+offset_top = -5.0
+offset_right = -86.0
+offset_bottom = -589.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hxf7e")
+
+[node name="Character_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 183.0
+offset_top = -2.0
+offset_right = 270.0
+offset_bottom = 62.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vs3lp")
+
+[node name="Avatar" type="Panel" parent="Character_button"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 72.0
+offset_bottom = 57.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jbtjf")
+
+[node name="TextureButton" type="TextureButton" parent="Character_button/Avatar"]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 50.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Character_button/Avatar"]
+scale = Vector2(0.1, 0.1)
+
+[node name="Character_panel" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 15.0
+offset_top = -2.0
+offset_right = 269.0
+offset_bottom = 60.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fuxam")
+
+[node name="Avatar" type="Panel" parent="Character_panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 72.0
+offset_bottom = 57.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jbtjf")
+
+[node name="TextureButton" type="TextureButton" parent="Character_panel/Avatar"]
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 50.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Character_panel/Avatar"]
+
+[node name="Title_container" type="Panel" parent="Character_panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -8.5
+offset_bottom = 8.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8meye")
+
+[node name="Name_holder" type="Label" parent="Character_panel/Title_container"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -1.5
+offset_right = 107.0
+offset_bottom = 21.5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "NAME HERE ! ! "
+clip_text = true
+text_overrun_behavior = 3
+uppercase = true
+
+[node name="Line2D" type="Line2D" parent="Character_panel/Title_container"]
+position = Vector2(110, -1)
+points = PackedVector2Array(0, 4, 0, 9, 0, 13, 0, 18)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Lvl" type="Label" parent="Character_panel/Title_container"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 5.0
+offset_right = 132.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "LVL."
+
+[node name="Level_count" type="Label" parent="Character_panel/Title_container"]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 5.0
+offset_right = 147.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "69"
+text_overrun_behavior = 3
+uppercase = true
+
+[connection signal="pressed" from="Character_button" to="." method="_on_button_pressed"]
+[connection signal="ready" from="Character_button" to="." method="_on_button_ready"]
+[connection signal="pressed" from="Character_button/Avatar/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Character_panel/Avatar/TextureButton" to="." method="_on_texture_button_pressed"]
