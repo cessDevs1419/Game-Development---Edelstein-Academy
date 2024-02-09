@@ -18,10 +18,17 @@ corner_radius_bottom_left = 7
 script = ExtResource("1_oa7dc")
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = 1042.0
-offset_top = 540.0
-offset_right = 1130.0
-offset_bottom = 632.0
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -118.0
+offset_top = -119.0
+offset_right = -30.0
+offset_bottom = -27.0
+grow_horizontal = 0
+grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_2lfpk")
 
 [node name="Label" type="Label" parent="Panel"]

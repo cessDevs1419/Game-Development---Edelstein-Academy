@@ -26,7 +26,7 @@ func _process(delta):
 	pass
 
 func update_avatar(avatar_path):
-	global_function.update_image(avatars, avatar_path, .11, .11, 32, 31)
+	global_function.update_image(avatars, avatar_path, .10, .10, 29, 29)
 	
 func update_contents(nameValue: String, lvlcountValue:String):
 	global_function.update_contents(namenode, nameValue, lvlcountnode, lvlcountValue)

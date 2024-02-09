@@ -12,6 +12,7 @@ var tile_icon
 @onready var tile = preload("res://Assets/Components/Tile_Container/Tile_Container.tscn").instantiate()
 @onready var modal = preload("res://Assets/Components/Modal/Modal.tscn").instantiate()
 @onready var button_icons = preload("res://Assets/Components/Icon_Button/Icon_Button.tscn")
+@onready var overview_panel = preload("res://Assets/Components/Overview_Panel/Overview_Panel.tscn").instantiate()
 #@onready var characters_selection_scene = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
 
 func _ready():
@@ -22,18 +23,20 @@ func _ready():
 	
 	ui.add_child(status_bar)
 	ui.add_child(headers)
+	ui.add_child(overview_panel)
 	ui.add_child(tile)
+	
 	
 	#call to display modal
 	#ui.add_child(modal)
 	
-	var button1 = button_icons.instantiate()
-	button1.icon("settings")
-	hbox_container.add_child(button1)
+	
 	var button2 = button_icons.instantiate()
 	button2.icon("profile")
 	hbox_container.add_child(button2)
-	
+	var button1 = button_icons.instantiate()
+	button1.icon("settings")
+	hbox_container.add_child(button1)
 	
 	#status bar 
 	status_bar.update_avatar(avatar_icon)
