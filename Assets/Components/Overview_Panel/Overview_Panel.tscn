@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ce4mrlpag7y26"]
+[gd_scene load_steps=9 format=3 uid="uid://ce4mrlpag7y26"]
 
 [ext_resource type="Script" path="res://Assets/Components/Overview_Panel/Overview_Panel.gd" id="1_j5o7d"]
 [ext_resource type="Texture2D" uid="uid://dy6nwugniqcge" path="res://Assets/Sprites/left.png" id="2_24cb0"]
@@ -22,14 +22,27 @@ content_margin_bottom = 1.0
 bg_color = Color(0.6, 0.6, 0.6, 0)
 border_color = Color(0.8, 0.8, 0.8, 0)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cs3hq"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 0.32549)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_japxy"]
+
 [node name="OverviewPanel" type="Node"]
 script = ExtResource("1_j5o7d")
 
 [node name="Objective" type="Panel" parent="."]
-offset_left = -255.0
-offset_top = 148.0
-offset_right = 78.0
-offset_bottom = 330.0
+anchors_preset = -1
+anchor_top = 0.127
+anchor_bottom = 0.127
+offset_left = -257.0
+offset_top = 64.704
+offset_right = 76.0
+offset_bottom = 246.704
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_mq26k")
 
 [node name="TextureButton" type="TextureButton" parent="Objective"]
@@ -71,4 +84,41 @@ offset_right = 86.0
 offset_bottom = 50.0
 text = "Objective"
 
+[node name="Characterpanel" type="Panel" parent="."]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.128
+anchor_right = 1.0
+anchor_bottom = 0.128
+offset_left = -67.0
+offset_top = 66.056
+offset_right = 265.0
+offset_bottom = 247.056
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cs3hq")
+
+[node name="TextureButton" type="TextureButton" parent="Characterpanel"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 77.0
+offset_right = 51.0
+offset_bottom = 106.0
+toggle_mode = true
+button_pressed = true
+texture_normal = ExtResource("3_rt16m")
+texture_pressed = ExtResource("2_24cb0")
+stretch_mode = 3
+
+[node name="Panel" type="Panel" parent="Characterpanel"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 23.0
+offset_right = 312.0
+offset_bottom = 159.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_japxy")
+
 [connection signal="toggled" from="Objective/TextureButton" to="." method="_on_texture_button_toggled"]
+[connection signal="toggled" from="Objective/TextureButton" to="." method="_objective_button_toggled"]
+[connection signal="toggled" from="Characterpanel/TextureButton" to="." method="_on_texture_button_toggled"]
+[connection signal="toggled" from="Characterpanel/TextureButton" to="." method="_character_button_toggled"]
