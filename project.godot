@@ -15,10 +15,18 @@ run/main_scene="res://ui/ingame_interface/ingame_interface.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SignalBus="*res://Core/SignalBus/SignalBus.gd"
+
 [display]
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[filesystem]
+
+import/fbx/enabled=false
 
 [input]
 

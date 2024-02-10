@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xv5lw4bj2av3"
-path.s3tc="res://.godot/imported/sword_2handed-bbca2d6720be2f099fbc52d95a463034_knight_texture.png-cd89d953d13cbe065f70020f78d976c5.s3tc.ctex"
+path.s3tc="res://.godot/imported/sword_2handed-bbca2d6720be2f099fbc52d95a463034_knight_texture.png-4bb57922155d9808d6fe54e7cca67b4f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/sword_2handed-bbca2d6720be2f099fbc52d95a463034_knight_texture.png"
-dest_files=["res://.godot/imported/sword_2handed-bbca2d6720be2f099fbc52d95a463034_knight_texture.png-cd89d953d13cbe065f70020f78d976c5.s3tc.ctex"]
+source_file="res://assets/fbx/sword_2handed-bbca2d6720be2f099fbc52d95a463034_knight_texture.png"
+dest_files=["res://.godot/imported/sword_2handed-bbca2d6720be2f099fbc52d95a463034_knight_texture.png-4bb57922155d9808d6fe54e7cca67b4f.s3tc.ctex"]
 
 [params]
 

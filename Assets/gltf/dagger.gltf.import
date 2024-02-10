@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://jkflsonloh4o"
-path="res://.godot/imported/dagger.gltf-cffe83b18bc247acd9af38359980df3e.scn"
+path="res://.godot/imported/dagger.gltf-2b23e6e8d48b3e138a91ee2fe298eef1.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/dagger.gltf"
-dest_files=["res://.godot/imported/dagger.gltf-cffe83b18bc247acd9af38359980df3e.scn"]
+source_file="res://assets/gltf/dagger.gltf"
+dest_files=["res://.godot/imported/dagger.gltf-2b23e6e8d48b3e138a91ee2fe298eef1.scn"]
 
 [params]
 

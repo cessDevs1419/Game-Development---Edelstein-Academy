@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc0rlvrhnwc7k"
-path.s3tc="res://.godot/imported/staff-6cdd72855eab73063062f9d927a284c5_mage_texture.png-e6c29ba41bbc10d0e0047a8c39e69c36.s3tc.ctex"
+path.s3tc="res://.godot/imported/staff-6cdd72855eab73063062f9d927a284c5_mage_texture.png-62f721a07b445a045d716718c57f20d9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/staff-6cdd72855eab73063062f9d927a284c5_mage_texture.png"
-dest_files=["res://.godot/imported/staff-6cdd72855eab73063062f9d927a284c5_mage_texture.png-e6c29ba41bbc10d0e0047a8c39e69c36.s3tc.ctex"]
+source_file="res://assets/fbx/staff-6cdd72855eab73063062f9d927a284c5_mage_texture.png"
+dest_files=["res://.godot/imported/staff-6cdd72855eab73063062f9d927a284c5_mage_texture.png-62f721a07b445a045d716718c57f20d9.s3tc.ctex"]
 
 [params]
 

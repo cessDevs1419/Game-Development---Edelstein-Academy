@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfn1wxrp6wnnq"
-path.s3tc="res://.godot/imported/sword_2handed_color-236251eadde21f96e67fb3c865f25674_knight_texture.png-ebcd16511a6465772821f1146b5617f5.s3tc.ctex"
+path.s3tc="res://.godot/imported/sword_2handed_color-236251eadde21f96e67fb3c865f25674_knight_texture.png-0f8f89a389572be5e2362fcf4b62382d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/sword_2handed_color-236251eadde21f96e67fb3c865f25674_knight_texture.png"
-dest_files=["res://.godot/imported/sword_2handed_color-236251eadde21f96e67fb3c865f25674_knight_texture.png-ebcd16511a6465772821f1146b5617f5.s3tc.ctex"]
+source_file="res://assets/fbx/sword_2handed_color-236251eadde21f96e67fb3c865f25674_knight_texture.png"
+dest_files=["res://.godot/imported/sword_2handed_color-236251eadde21f96e67fb3c865f25674_knight_texture.png-0f8f89a389572be5e2362fcf4b62382d.s3tc.ctex"]
 
 [params]
 

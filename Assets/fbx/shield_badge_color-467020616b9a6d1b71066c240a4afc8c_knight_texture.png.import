@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dueneuj1we5fm"
-path.s3tc="res://.godot/imported/shield_badge_color-467020616b9a6d1b71066c240a4afc8c_knight_texture.png-6a3e18b54260e5bbf0a0bfb75bf9dc9a.s3tc.ctex"
+path.s3tc="res://.godot/imported/shield_badge_color-467020616b9a6d1b71066c240a4afc8c_knight_texture.png-fe5b865ed7fe5fd9a3f2de7a077c64aa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/shield_badge_color-467020616b9a6d1b71066c240a4afc8c_knight_texture.png"
-dest_files=["res://.godot/imported/shield_badge_color-467020616b9a6d1b71066c240a4afc8c_knight_texture.png-6a3e18b54260e5bbf0a0bfb75bf9dc9a.s3tc.ctex"]
+source_file="res://assets/fbx/shield_badge_color-467020616b9a6d1b71066c240a4afc8c_knight_texture.png"
+dest_files=["res://.godot/imported/shield_badge_color-467020616b9a6d1b71066c240a4afc8c_knight_texture.png-fe5b865ed7fe5fd9a3f2de7a077c64aa.s3tc.ctex"]
 
 [params]
 

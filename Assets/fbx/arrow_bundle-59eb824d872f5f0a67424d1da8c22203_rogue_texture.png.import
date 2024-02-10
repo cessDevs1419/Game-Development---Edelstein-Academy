@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fk8gws3g32kt"
-path.s3tc="res://.godot/imported/arrow_bundle-59eb824d872f5f0a67424d1da8c22203_rogue_texture.png-b91a163f616d60e78f251b88fbe1e4fe.s3tc.ctex"
+path.s3tc="res://.godot/imported/arrow_bundle-59eb824d872f5f0a67424d1da8c22203_rogue_texture.png-1f05a65409132da7b7e79bf0def310c8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/arrow_bundle-59eb824d872f5f0a67424d1da8c22203_rogue_texture.png"
-dest_files=["res://.godot/imported/arrow_bundle-59eb824d872f5f0a67424d1da8c22203_rogue_texture.png-b91a163f616d60e78f251b88fbe1e4fe.s3tc.ctex"]
+source_file="res://assets/fbx/arrow_bundle-59eb824d872f5f0a67424d1da8c22203_rogue_texture.png"
+dest_files=["res://.godot/imported/arrow_bundle-59eb824d872f5f0a67424d1da8c22203_rogue_texture.png-1f05a65409132da7b7e79bf0def310c8.s3tc.ctex"]
 
 [params]
 

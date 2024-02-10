@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cjuh3jg3dl7mi"
-path="res://.godot/imported/crossbow_1handed.gltf-5aaeab81b44d4211e269f42d6bdbc79c.scn"
+path="res://.godot/imported/crossbow_1handed.gltf-dd631ee744fe687e7084b4def5c5f7e6.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/crossbow_1handed.gltf"
-dest_files=["res://.godot/imported/crossbow_1handed.gltf-5aaeab81b44d4211e269f42d6bdbc79c.scn"]
+source_file="res://assets/gltf/crossbow_1handed.gltf"
+dest_files=["res://.godot/imported/crossbow_1handed.gltf-dd631ee744fe687e7084b4def5c5f7e6.scn"]
 
 [params]
 

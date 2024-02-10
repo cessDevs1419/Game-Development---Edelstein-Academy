@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://imau4jyb0raf"
-path.s3tc="res://.godot/imported/spellbook_open-7191f6fb3960f8097611b8f8a720e396_mage_texture.png-d524ffc06010d4bd3883394a9a68e90f.s3tc.ctex"
+path.s3tc="res://.godot/imported/spellbook_open-7191f6fb3960f8097611b8f8a720e396_mage_texture.png-91d88b655af43c371154658b1e287aa2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/spellbook_open-7191f6fb3960f8097611b8f8a720e396_mage_texture.png"
-dest_files=["res://.godot/imported/spellbook_open-7191f6fb3960f8097611b8f8a720e396_mage_texture.png-d524ffc06010d4bd3883394a9a68e90f.s3tc.ctex"]
+source_file="res://assets/fbx/spellbook_open-7191f6fb3960f8097611b8f8a720e396_mage_texture.png"
+dest_files=["res://.godot/imported/spellbook_open-7191f6fb3960f8097611b8f8a720e396_mage_texture.png-91d88b655af43c371154658b1e287aa2.s3tc.ctex"]
 
 [params]
 

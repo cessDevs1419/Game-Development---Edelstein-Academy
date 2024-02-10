@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh20ph6j1nvbq"
-path.s3tc="res://.godot/imported/shield_spikes-355e876a5227e63b685629297d7e895d_knight_texture.png-2175b48208932d1cdf1b6177ddb17c6f.s3tc.ctex"
+path.s3tc="res://.godot/imported/shield_spikes-355e876a5227e63b685629297d7e895d_knight_texture.png-8d23758769a0a8487dc3e794d5ec4c26.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/shield_spikes-355e876a5227e63b685629297d7e895d_knight_texture.png"
-dest_files=["res://.godot/imported/shield_spikes-355e876a5227e63b685629297d7e895d_knight_texture.png-2175b48208932d1cdf1b6177ddb17c6f.s3tc.ctex"]
+source_file="res://assets/fbx/shield_spikes-355e876a5227e63b685629297d7e895d_knight_texture.png"
+dest_files=["res://.godot/imported/shield_spikes-355e876a5227e63b685629297d7e895d_knight_texture.png-8d23758769a0a8487dc3e794d5ec4c26.s3tc.ctex"]
 
 [params]
 

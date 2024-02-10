@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://botj6xscsuw2d"
-path.s3tc="res://.godot/imported/mug_full-a8f2494130567a7360b93c0d7ae8940a_barbarian_texture.png-3e9f923fac49ccd9cbd985215f68b726.s3tc.ctex"
+path.s3tc="res://.godot/imported/mug_full-a8f2494130567a7360b93c0d7ae8940a_barbarian_texture.png-df3b039bda2cb8953a8474352f2b642a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/mug_full-a8f2494130567a7360b93c0d7ae8940a_barbarian_texture.png"
-dest_files=["res://.godot/imported/mug_full-a8f2494130567a7360b93c0d7ae8940a_barbarian_texture.png-3e9f923fac49ccd9cbd985215f68b726.s3tc.ctex"]
+source_file="res://assets/fbx/mug_full-a8f2494130567a7360b93c0d7ae8940a_barbarian_texture.png"
+dest_files=["res://.godot/imported/mug_full-a8f2494130567a7360b93c0d7ae8940a_barbarian_texture.png-df3b039bda2cb8953a8474352f2b642a.s3tc.ctex"]
 
 [params]
 

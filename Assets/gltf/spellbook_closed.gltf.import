@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cny2yj0dad4ml"
-path="res://.godot/imported/spellbook_closed.gltf-3334285074f9335687f6ef40b0c0a848.scn"
+path="res://.godot/imported/spellbook_closed.gltf-6ec0dbfafb2de7d7f8679e8c6491bc77.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/spellbook_closed.gltf"
-dest_files=["res://.godot/imported/spellbook_closed.gltf-3334285074f9335687f6ef40b0c0a848.scn"]
+source_file="res://assets/gltf/spellbook_closed.gltf"
+dest_files=["res://.godot/imported/spellbook_closed.gltf-6ec0dbfafb2de7d7f8679e8c6491bc77.scn"]
 
 [params]
 

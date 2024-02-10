@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dnf25orf2b1wh"
-path="res://.godot/imported/arrow_bundle.gltf-112c073121ac22d42fb6a0d9b9c78402.scn"
+path="res://.godot/imported/arrow_bundle.gltf-02c3c9f879d8e2dd5f6fb5e905c8d68a.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/arrow_bundle.gltf"
-dest_files=["res://.godot/imported/arrow_bundle.gltf-112c073121ac22d42fb6a0d9b9c78402.scn"]
+source_file="res://assets/gltf/arrow_bundle.gltf"
+dest_files=["res://.godot/imported/arrow_bundle.gltf-02c3c9f879d8e2dd5f6fb5e905c8d68a.scn"]
 
 [params]
 

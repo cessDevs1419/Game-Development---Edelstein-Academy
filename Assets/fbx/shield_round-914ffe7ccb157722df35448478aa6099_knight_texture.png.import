@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do5w3u2y5y4ys"
-path.s3tc="res://.godot/imported/shield_round-914ffe7ccb157722df35448478aa6099_knight_texture.png-4dd3d10039b4392b6b8c3667baecc656.s3tc.ctex"
+path.s3tc="res://.godot/imported/shield_round-914ffe7ccb157722df35448478aa6099_knight_texture.png-eee0a421ea7359ec65aa93c095f2fe19.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/shield_round-914ffe7ccb157722df35448478aa6099_knight_texture.png"
-dest_files=["res://.godot/imported/shield_round-914ffe7ccb157722df35448478aa6099_knight_texture.png-4dd3d10039b4392b6b8c3667baecc656.s3tc.ctex"]
+source_file="res://assets/fbx/shield_round-914ffe7ccb157722df35448478aa6099_knight_texture.png"
+dest_files=["res://.godot/imported/shield_round-914ffe7ccb157722df35448478aa6099_knight_texture.png-eee0a421ea7359ec65aa93c095f2fe19.s3tc.ctex"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://463qyimti7sd"
-path="res://.godot/imported/wand.gltf-fce5b7c16ff0d4c89cd6af73789caf71.scn"
+path="res://.godot/imported/wand.gltf-f2c8771a8f086b588ccbfca80c354977.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/wand.gltf"
-dest_files=["res://.godot/imported/wand.gltf-fce5b7c16ff0d4c89cd6af73789caf71.scn"]
+source_file="res://assets/gltf/wand.gltf"
+dest_files=["res://.godot/imported/wand.gltf-f2c8771a8f086b588ccbfca80c354977.scn"]
 
 [params]
 

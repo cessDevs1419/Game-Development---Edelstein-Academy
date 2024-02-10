@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvqi2ejjer5gc"
-path="res://.godot/imported/Player.png-0ef3b5a78e0b004a3955c3aa923fc57d.ctex"
+uid="uid://bamet2nxoisin"
+path="res://.godot/imported/SelectedUnitIndicator.png-5b50074ac2ec7ae54abdf484123e9b21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Characters/Player/Player.png"
-dest_files=["res://.godot/imported/Player.png-0ef3b5a78e0b004a3955c3aa923fc57d.ctex"]
+source_file="res://Resources/Atlas/Overlays/Indicators/SelectedUnitIndicator.png"
+dest_files=["res://.godot/imported/SelectedUnitIndicator.png-5b50074ac2ec7ae54abdf484123e9b21.ctex"]
 
 [params]
 
