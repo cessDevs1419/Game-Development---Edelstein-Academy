@@ -30,6 +30,12 @@ func _ready():
 	#call to display modal
 	#ui.add_child(modal)
 	
+	#sample array
+	characters = [
+		{"id": "123", "name": "John", "level": 42, "avatar": "res://assets/sprites/sample_avatar.png"},
+		{"id": "124", "name": "Jane", "level": 35, "avatar": "res://assets/sprites/sample_avatar.png"},
+		{"id": "125", "name": "Jennifer", "level": 69, "avatar": "res://assets/sprites/sample_avatar.png"},
+	]
 	
 	var button2 = button_icons.instantiate()
 	button2.icon("profile")
@@ -46,15 +52,15 @@ func _ready():
 	#custom header 
 	headers.change_label('Begin Match')
 	
+	#Overview panel
+	overview_panel.deployed_content(20,40)
+	overview_panel.character_panel_content(59, characters)
+	
 	#tile container
 	tile.tile_types(tile_icon)
 	tile.tile_count(23)
 		
-	characters = [
-		{"id": "123", "name": "John", "level": 42, "avatar": "res://assets/sprites/sample_avatar.png"},
-		{"id": "124", "name": "Jane", "level": 35, "avatar": "res://assets/sprites/sample_avatar.png"},
-		{"id": "125", "name": "Jennifer", "level": 69, "avatar": "res://assets/sprites/sample_avatar.png"},
-	]
+
 
 	#for character in characters:
 		#var character_instance = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()

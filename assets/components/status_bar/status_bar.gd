@@ -9,6 +9,7 @@ var lvlcountnode
 var avatars
 var texture 
 var healthbar
+var hbox
 
 var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 
@@ -19,6 +20,8 @@ func _ready():
 	lvlcountnode = get_node("Panel/Panel/Avatar/Level_count_container/Level_count")
 	avatars = get_node("Panel/Panel/Avatar/Sprite2D")
 	healthbar = get_node("Panel/Panel/Status_container/ProgressBar")
+	hbox = get_node("Panel/Panel/Status_container/HBoxContainer")
+	update_top_range(30)
 	pass
 	
 
@@ -41,6 +44,6 @@ func update_range(value: int, max: int):
 	
 	pass
 	
-func update_wheel():
+func update_top_range(range: int):
 	
 	pass

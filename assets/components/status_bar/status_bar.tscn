@@ -129,6 +129,7 @@ text_overrun_behavior = 3
 uppercase = true
 
 [node name="Status_container" type="Panel" parent="Panel/Panel"]
+clip_contents = true
 layout_mode = 0
 offset_left = 80.0
 offset_top = 8.0
