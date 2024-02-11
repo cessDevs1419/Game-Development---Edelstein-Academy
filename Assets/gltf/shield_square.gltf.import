@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bsmbusxjbahgd"
-path="res://.godot/imported/shield_square.gltf-161e72a685df21802a6708024a2b6560.scn"
+path="res://.godot/imported/shield_square.gltf-74326505fb0c400543147f51c967a0ec.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/shield_square.gltf"
-dest_files=["res://.godot/imported/shield_square.gltf-161e72a685df21802a6708024a2b6560.scn"]
+source_file="res://assets/gltf/shield_square.gltf"
+dest_files=["res://.godot/imported/shield_square.gltf-74326505fb0c400543147f51c967a0ec.scn"]
 
 [params]
 

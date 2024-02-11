@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t07crub30g46"
-path.s3tc="res://.godot/imported/axe_2handed-c3ac0bf0c72fae1135237b09b9f77af3_barbarian_texture.png-1091481a71b05294b8c7a4d8d790a2a6.s3tc.ctex"
+path.s3tc="res://.godot/imported/axe_2handed-c3ac0bf0c72fae1135237b09b9f77af3_barbarian_texture.png-eba192b0c059464a7412ee0b7d19d71e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/axe_2handed-c3ac0bf0c72fae1135237b09b9f77af3_barbarian_texture.png"
-dest_files=["res://.godot/imported/axe_2handed-c3ac0bf0c72fae1135237b09b9f77af3_barbarian_texture.png-1091481a71b05294b8c7a4d8d790a2a6.s3tc.ctex"]
+source_file="res://assets/fbx/axe_2handed-c3ac0bf0c72fae1135237b09b9f77af3_barbarian_texture.png"
+dest_files=["res://.godot/imported/axe_2handed-c3ac0bf0c72fae1135237b09b9f77af3_barbarian_texture.png-eba192b0c059464a7412ee0b7d19d71e.s3tc.ctex"]
 
 [params]
 

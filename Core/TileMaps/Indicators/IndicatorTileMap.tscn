@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkne4ko1ipwwa"]
+
+[ext_resource type="Texture2D" uid="uid://b472ryjacsggw" path="res://Resources/Atlas/Overlays/Indicators/PlayerUnitIndicator.png" id="1_155i7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o2pdy"]
+texture = ExtResource("1_155i7")
+texture_region_size = Vector2i(300, 170)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_wooci"]
+tile_shape = 1
+tile_layout = 5
+tile_offset_axis = 1
+tile_size = Vector2i(300, 170)
+sources/0 = SubResource("TileSetAtlasSource_o2pdy")
+
+[node name="IndicatorTileMap" type="TileMap"]
+y_sort_enabled = true
+tile_set = SubResource("TileSet_wooci")
+format = 2
+layer_0/y_sort_enabled = true

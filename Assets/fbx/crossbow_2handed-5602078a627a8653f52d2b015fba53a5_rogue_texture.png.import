@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch0o2svy88gkb"
-path.s3tc="res://.godot/imported/crossbow_2handed-5602078a627a8653f52d2b015fba53a5_rogue_texture.png-d3dd2638db487dd0c7d7ae69edcde3c8.s3tc.ctex"
+path.s3tc="res://.godot/imported/crossbow_2handed-5602078a627a8653f52d2b015fba53a5_rogue_texture.png-3e0bbcea2eccb9fe24dfb537f2ab0ef2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/crossbow_2handed-5602078a627a8653f52d2b015fba53a5_rogue_texture.png"
-dest_files=["res://.godot/imported/crossbow_2handed-5602078a627a8653f52d2b015fba53a5_rogue_texture.png-d3dd2638db487dd0c7d7ae69edcde3c8.s3tc.ctex"]
+source_file="res://assets/fbx/crossbow_2handed-5602078a627a8653f52d2b015fba53a5_rogue_texture.png"
+dest_files=["res://.godot/imported/crossbow_2handed-5602078a627a8653f52d2b015fba53a5_rogue_texture.png-3e0bbcea2eccb9fe24dfb537f2ab0ef2.s3tc.ctex"]
 
 [params]
 

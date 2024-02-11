@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7vetvb6mumrm"
-path.s3tc="res://.godot/imported/shield_round_barbarian-2d1a3e3d6e454283f5c99800bc7d757c_barbarian_texture.png-bfac14c04f27a9611a1c2ddf82e3d179.s3tc.ctex"
+path.s3tc="res://.godot/imported/shield_round_barbarian-2d1a3e3d6e454283f5c99800bc7d757c_barbarian_texture.png-cb9bf5ac72dd4020284ab3a3fe9cfbc7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/shield_round_barbarian-2d1a3e3d6e454283f5c99800bc7d757c_barbarian_texture.png"
-dest_files=["res://.godot/imported/shield_round_barbarian-2d1a3e3d6e454283f5c99800bc7d757c_barbarian_texture.png-bfac14c04f27a9611a1c2ddf82e3d179.s3tc.ctex"]
+source_file="res://assets/fbx/shield_round_barbarian-2d1a3e3d6e454283f5c99800bc7d757c_barbarian_texture.png"
+dest_files=["res://.godot/imported/shield_round_barbarian-2d1a3e3d6e454283f5c99800bc7d757c_barbarian_texture.png-cb9bf5ac72dd4020284ab3a3fe9cfbc7.s3tc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b472ryjacsggw"
-path="res://.godot/imported/PlayerUnitIndicator.png-615b92d0bd6138de7fb16a0de6797747.ctex"
+uid="uid://cvqi2ejjer5gc"
+path="res://.godot/imported/Unit.png-6cb5ffb728d3dbe63e874a7fe8092e4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Atlas/Indicators/PlayerUnitIndicator.png"
-dest_files=["res://.godot/imported/PlayerUnitIndicator.png-615b92d0bd6138de7fb16a0de6797747.ctex"]
+source_file="res://Resources/Characters/Unit/Unit.png"
+dest_files=["res://.godot/imported/Unit.png-6cb5ffb728d3dbe63e874a7fe8092e4d.ctex"]
 
 [params]
 

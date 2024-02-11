@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://nodisyk6mh2b"
-path="res://.godot/imported/axe_1handed.gltf-54cdd47e65a513929afeec6647080019.scn"
+path="res://.godot/imported/axe_1handed.gltf-e417ad39aff82c2973d32077203c2d85.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/axe_1handed.gltf"
-dest_files=["res://.godot/imported/axe_1handed.gltf-54cdd47e65a513929afeec6647080019.scn"]
+source_file="res://assets/gltf/axe_1handed.gltf"
+dest_files=["res://.godot/imported/axe_1handed.gltf-e417ad39aff82c2973d32077203c2d85.scn"]
 
 [params]
 

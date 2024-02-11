@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvlbymr3sh2w4"
-path.s3tc="res://.godot/imported/smokebomb-aea4ddb7c351e0847ba3f22e80f506af_rogue_texture.png-2ee5979c9b14caa4a57b2a060fade064.s3tc.ctex"
+path.s3tc="res://.godot/imported/smokebomb-aea4ddb7c351e0847ba3f22e80f506af_rogue_texture.png-a8f128692ba35297b11a3ad8978a87f5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/smokebomb-aea4ddb7c351e0847ba3f22e80f506af_rogue_texture.png"
-dest_files=["res://.godot/imported/smokebomb-aea4ddb7c351e0847ba3f22e80f506af_rogue_texture.png-2ee5979c9b14caa4a57b2a060fade064.s3tc.ctex"]
+source_file="res://assets/fbx/smokebomb-aea4ddb7c351e0847ba3f22e80f506af_rogue_texture.png"
+dest_files=["res://.godot/imported/smokebomb-aea4ddb7c351e0847ba3f22e80f506af_rogue_texture.png-a8f128692ba35297b11a3ad8978a87f5.s3tc.ctex"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://kjuwsuogr06v"
-path="res://.godot/imported/shield_round_barbarian.gltf-18123d38d4a83268e340205e8c17d9d3.scn"
+path="res://.godot/imported/shield_round_barbarian.gltf-a673f04276324ea2491bd4b9884ab501.scn"
 
 [deps]
 
-source_file="res://Assets/gltf/shield_round_barbarian.gltf"
-dest_files=["res://.godot/imported/shield_round_barbarian.gltf-18123d38d4a83268e340205e8c17d9d3.scn"]
+source_file="res://assets/gltf/shield_round_barbarian.gltf"
+dest_files=["res://.godot/imported/shield_round_barbarian.gltf-a673f04276324ea2491bd4b9884ab501.scn"]
 
 [params]
 

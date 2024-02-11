@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs52td6kpe7qi"
-path.s3tc="res://.godot/imported/wand-b3e3e9e6c192799f7b8544f2e0461db4_mage_texture.png-2dda300ccde38f6d532db531c81aead6.s3tc.ctex"
+path.s3tc="res://.godot/imported/wand-b3e3e9e6c192799f7b8544f2e0461db4_mage_texture.png-ebd87a7e1488f5cc2efd2c7935eafad1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/fbx/wand-b3e3e9e6c192799f7b8544f2e0461db4_mage_texture.png"
-dest_files=["res://.godot/imported/wand-b3e3e9e6c192799f7b8544f2e0461db4_mage_texture.png-2dda300ccde38f6d532db531c81aead6.s3tc.ctex"]
+source_file="res://assets/fbx/wand-b3e3e9e6c192799f7b8544f2e0461db4_mage_texture.png"
+dest_files=["res://.godot/imported/wand-b3e3e9e6c192799f7b8544f2e0461db4_mage_texture.png-ebd87a7e1488f5cc2efd2c7935eafad1.s3tc.ctex"]
 
 [params]
 
