@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm58g1p51rooh"]
+
+[ext_resource type="PackedScene" uid="uid://ty4hmpdson08" path="res://Assets/Components/Hud/Hud.tscn" id="1_ir64u"]
+
+[node name="PreBattle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" parent="." instance=ExtResource("1_ir64u")]
+layout_mode = 1

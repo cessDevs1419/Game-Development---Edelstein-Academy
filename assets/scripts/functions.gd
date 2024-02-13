@@ -26,6 +26,10 @@ func update_contents(namenode: Node, nameValue:String, lvlcountnode: Node, lvlco
 	#namenode.text = nameValue
 	lvlcountnode.text = lvlcountValue
 
+
+
+
+	
 func get_data():
 	
 	pass

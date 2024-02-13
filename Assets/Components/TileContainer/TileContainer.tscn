@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://382g3mcjwti8"]
 
-[ext_resource type="Script" path="res://Assets/Components/Tile_Container/Tile_Container.gd" id="1_oa7dc"]
+[ext_resource type="Script" path="res://Assets/Components/TileContainer/TileContainer.gd" id="1_oa7dc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2lfpk"]
 bg_color = Color(0.772549, 0.772549, 0.772549, 1)
