@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bulrtsdppkj4v"]
 
-[ext_resource type="Script" path="res://Assets/Components/Header_Container/Headers.gd" id="1_8wxo1"]
+[ext_resource type="Script" path="res://Assets/Components/SplashScreen/SplashScreen.gd" id="1_8wxo1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_72h5v"]
 
