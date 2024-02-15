@@ -28,7 +28,7 @@ func _ready():
 	
 	
 	#call to display modal
-	#ui.add_child(modal)
+	ui.add_child(modal)
 	
 	#sample array
 	characters = [

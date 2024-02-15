@@ -1,11 +1,26 @@
 extends Control
 
+var modal
+var modalLg
+var modalMd
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	modalLg = $Modal/Modal_Lg
+	modalMd = $Modal/Modal_Md
+	modal = $Modal
+	
+	modal.visible = false
+	modalLg.visible = false
+	modalMd.visible = false
+	
+	pass 
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	pass
+	
+func modal_md_data(data):
+	pass
+	
+func modal_lg_data(data):
 	pass
