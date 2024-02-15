@@ -45,10 +45,10 @@ script = ExtResource("1_j5o7d")
 anchors_preset = -1
 anchor_top = 0.127
 anchor_bottom = 0.127
-offset_left = -263.0
-offset_top = 64.704
-offset_right = 70.0
-offset_bottom = 246.704
+offset_left = -264.0
+offset_top = 98.704
+offset_right = 69.0
+offset_bottom = 280.704
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_mq26k")
 
@@ -97,10 +97,10 @@ anchor_left = 1.0
 anchor_top = 0.128
 anchor_right = 1.0
 anchor_bottom = 0.128
-offset_left = -64.0
-offset_top = 66.056
-offset_right = 268.0
-offset_bottom = 247.056
+offset_left = -61.0
+offset_top = 99.056
+offset_right = 271.0
+offset_bottom = 280.056
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_cs3hq")
@@ -144,10 +144,10 @@ horizontal_alignment = 1
 
 [node name="Overheadpanel" type="Panel" parent="."]
 visible = false
-offset_left = 1086.0
-offset_top = 98.0
-offset_right = 1372.0
-offset_bottom = 138.0
+offset_left = 1090.0
+offset_top = 136.0
+offset_right = 1376.0
+offset_bottom = 176.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_lfb8g")
 
 [node name="Label" type="Label" parent="Overheadpanel"]
@@ -189,7 +189,7 @@ theme_override_colors/font_color = Color(0.384314, 0.580392, 0.372549, 1)
 text = "69"
 horizontal_alignment = 1
 
-[connection signal="toggled" from="Objective/TextureButton" to="." method="_objective_button_toggled"]
 [connection signal="toggled" from="Objective/TextureButton" to="." method="_on_texture_button_toggled"]
+[connection signal="toggled" from="Objective/TextureButton" to="." method="_objective_button_toggled"]
 [connection signal="toggled" from="Characterpanel/TextureButton" to="." method="_character_button_toggled"]
 [connection signal="toggled" from="Characterpanel/TextureButton" to="." method="_on_texture_button_toggled"]

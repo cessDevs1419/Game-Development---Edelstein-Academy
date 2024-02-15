@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://4ijt7pjb11jm"]
+[gd_scene load_steps=4 format=3 uid="uid://4ijt7pjb11jm"]
+
+[ext_resource type="Script" path="res://Assets/Components/Modal/Modal.gd" id="1_r37wq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_smh1j"]
 bg_color = Color(0.133333, 0.133333, 0.133333, 0.87451)
@@ -23,6 +25,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_r37wq")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0

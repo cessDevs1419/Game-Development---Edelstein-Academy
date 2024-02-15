@@ -23,7 +23,7 @@ func update_image(
 	avatars.position.y = positionY
 	
 func update_contents(namenode: Node, nameValue:String, lvlcountnode: Node, lvlcountValue:String):
-	#namenode.text = nameValue
+	namenode.text = nameValue
 	lvlcountnode.text = lvlcountValue
 
 

@@ -13,10 +13,28 @@ script = ExtResource("1_qd45a")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 466.0
-offset_top = 422.0
-offset_right = 701.0
-offset_bottom = 509.0
+offset_left = 458.0
+offset_top = 420.0
+offset_right = 693.0
+offset_bottom = 507.0
 text = "START"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 227.0
+offset_right = 887.0
+offset_bottom = 311.0
+theme_override_font_sizes/font_size = 60
+text = "EDELSTEIN ACADEMY"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 326.0
+offset_right = 704.0
+offset_bottom = 382.0
+theme_override_font_sizes/font_size = 30
+text = "Please Press Start"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

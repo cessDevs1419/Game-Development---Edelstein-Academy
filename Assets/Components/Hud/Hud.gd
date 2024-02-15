@@ -14,13 +14,13 @@ var hbox
 var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 
 func _ready():
-	#namenode = get_node("Panel/Panel/Title_container/Name_holder")
-	progress = get_node("Panel/Panel/Progress")
-	total = get_node("Panel/Panel/Total")
-	lvlcountnode = get_node("Panel/Panel/Avatar/Level_count_container/Level_count")
+	namenode = get_node("Info_Container/Name_container/Name")
+	lvlcountnode = get_node("Info_Container/Level_count_container/Level_count")
+	progress = get_node("Panel/Panel/HBoxContainer/Progress")
+	total = get_node("Panel/Panel/HBoxContainer/Total")
 	avatars = get_node("Panel/Panel/Avatar/Sprite2D")
-	healthbar = get_node("Panel/Panel/Status_container/ProgressBar")
-	hbox = get_node("Panel/Panel/Status_container/HBoxContainer")
+	healthbar = get_node("Panel/Panel/HealthbarPanel/HealthBar")
+
 	update_top_range(30)
 	pass
 	
