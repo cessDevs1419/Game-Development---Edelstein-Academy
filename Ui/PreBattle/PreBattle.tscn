@@ -17,10 +17,19 @@ script = ExtResource("1_f7gfr")
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -116.0
-offset_top = 28.0
+offset_left = -134.0
+offset_top = 34.0
 offset_right = 1.0
-offset_bottom = 85.0
+offset_bottom = 91.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 306.0
+offset_top = 486.0
+offset_right = 878.0
+offset_bottom = 647.0
+text = "BEGIN GAME"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="start_game"]

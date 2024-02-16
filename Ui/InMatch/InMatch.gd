@@ -1,12 +1,12 @@
 extends Control
 
+
 var ui
 var characters
 var canvasLayer
 var hbox_container
 var avatar_icon
 var tile_icon
-var main
 
 @onready var status_bar = preload("res://Assets/Components/Hud/Hud.tscn").instantiate()
 @onready var headers = preload("res://Assets/Components/SplashScreen/SplashScreen.tscn").instantiate()
@@ -18,7 +18,6 @@ var main
 
 func _ready():
 	ui = $CanvasLayer
-	main = get_node(".")
 	hbox_container = $CanvasLayer/HBoxContainer
 	avatar_icon = Image.load_from_file("res://Assets/Sprites/Sample_Avatar.png")
 	tile_icon = Image.load_from_file("res://Assets/Sprites/Tile_Sample.png")
@@ -30,7 +29,7 @@ func _ready():
 	
 	
 	#call to display modal
-	#ui.add_child(modal)
+	ui.add_child(modal)
 	
 	#sample array
 	characters = [
@@ -50,7 +49,7 @@ func _ready():
 	status_bar.update_avatar(avatar_icon)
 	status_bar.update_contents( 'kwan', '69')
 	status_bar.update_range(200, 300)
-	status_bar.use_pre_battle()
+	status_bar.use_in_match()
 	#custom header 
 	#headers.change_label('Begin Match')
 	
@@ -63,23 +62,14 @@ func _ready():
 	tile.tile_count(23)
 		
 
-	
+
 	#for character in characters:
 		#var character_instance = preload("res://assets/components/character_selection/character_selection.tscn").instantiate()
 		#_add_characters(character_instance, character["id"], character["name"], str(character["level"]), character["avatar"])
-	pass
-	
+
 func _process(delta):
 	pass
 
 func _add_characters(character_instance, character_id: String, character_name: String, character_lvlcount: String, avatar: String):
 	character_instance._character_content(character_id, character_name, character_lvlcount, avatar)
 	pass
-
-
-
-
-
-func start_game():
-	get_tree().change_scene_to_file("res://Ui/InMatch/InMatch.tscn")
-	pass 

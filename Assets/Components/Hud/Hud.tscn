@@ -1,19 +1,37 @@
-[gd_scene load_steps=18 format=3 uid="uid://ty4hmpdson08"]
+[gd_scene load_steps=22 format=3 uid="uid://ty4hmpdson08"]
 
 [ext_resource type="Script" path="res://Assets/Components/Hud/Hud.gd" id="1_g7qhv"]
-[ext_resource type="Texture2D" uid="uid://dqvd724pdp4k0" path="res://Assets/Sprites/Hud.png" id="2_ypgpk"]
+[ext_resource type="Texture2D" uid="uid://dglyu8qo2qsb5" path="res://Assets/Sprites/Hud_Border.png" id="2_72ew7"]
+[ext_resource type="Texture2D" uid="uid://dr6lk42qavave" path="res://Assets/Sprites/PreGame_Hud_Border1.png" id="3_is0gl"]
 [ext_resource type="Texture2D" uid="uid://cv27ev85oq8x" path="res://Assets/Sprites/Hud_Frame.png" id="3_l6w4i"]
 [ext_resource type="Texture2D" uid="uid://vr73ifkr7elu" path="res://Assets/Sprites/Lvel_Bg.png" id="4_5q7do"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0erc8"]
-texture = ExtResource("2_ypgpk")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3rb5i"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y1mbc"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fndv6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jhlej"]
+texture = ExtResource("4_5q7do")
+
+[sub_resource type="Gradient" id="Gradient_vbojj"]
+offsets = PackedFloat32Array(0, 0.412162, 0.790541, 1)
+colors = PackedColorArray(0.103744, 0.103744, 0.103744, 1, 0.0627451, 0.0627451, 0.0627451, 0.921569, 0.162066, 0.162066, 0.162066, 0.501961, 0.158472, 0.158472, 0.158472, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_h7qeo"]
+gradient = SubResource("Gradient_vbojj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8id86"]
+texture = SubResource("GradientTexture2D_h7qeo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6pfn6"]
+texture = ExtResource("2_72ew7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2o324"]
 bg_color = Color(0.254902, 0.141176, 0.117647, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnukc"]
 bg_color = Color(0.156863, 0.156863, 0.156863, 1)
@@ -47,20 +65,10 @@ fill_to = Vector2(0.54717, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bps84"]
 texture = SubResource("GradientTexture2D_lwf3x")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fndv6"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2eptl"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jhlej"]
-texture = ExtResource("4_5q7do")
-
-[sub_resource type="Gradient" id="Gradient_vbojj"]
-offsets = PackedFloat32Array(0, 0.412162, 0.790541, 1)
-colors = PackedColorArray(0.103744, 0.103744, 0.103744, 1, 0.0627451, 0.0627451, 0.0627451, 0.921569, 0.162066, 0.162066, 0.162066, 0.501961, 0.158472, 0.158472, 0.158472, 0)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_h7qeo"]
-gradient = SubResource("Gradient_vbojj")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8id86"]
-texture = SubResource("GradientTexture2D_h7qeo")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fg7vr"]
+texture = ExtResource("3_is0gl")
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -75,85 +83,24 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_g7qhv")
 
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_left = -1.0
-offset_top = 2.0
-offset_right = 327.0
-offset_bottom = 83.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_0erc8")
-
-[node name="Panel" type="Panel" parent="Panel"]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 5.0
-offset_right = 323.0
-offset_bottom = 76.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_y1mbc")
-
-[node name="Avatar" type="Panel" parent="Panel/Panel"]
+[node name="InMatch" type="Panel" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 48.0
-offset_top = 95.0
-offset_right = 106.0
-offset_bottom = 150.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_xnukc")
+offset_left = -9.0
+offset_top = -7.0
+offset_right = 354.0
+offset_bottom = 142.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_3rb5i")
 
-[node name="Sprite2D" type="Sprite2D" parent="Panel/Panel/Avatar"]
-
-[node name="HealthbarPanel" type="Panel" parent="Panel/Panel"]
-clip_contents = true
+[node name="Info_Container" type="Panel" parent="InMatch"]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 4.0
-offset_right = 314.0
-offset_bottom = 67.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_ou6gj")
-
-[node name="HealthBar" type="ProgressBar" parent="Panel/Panel/HealthbarPanel"]
-z_index = 1
-layout_mode = 0
-offset_left = 4.0
-offset_top = 34.0
-offset_right = 305.0
-offset_bottom = 59.0
-theme_override_styles/background = SubResource("StyleBoxFlat_6ui88")
-theme_override_styles/fill = SubResource("StyleBoxTexture_bps84")
-max_value = 1e+09
-value = 1e+07
-show_percentage = false
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel"]
-layout_mode = 0
-offset_left = 15.0
-offset_top = 39.0
-offset_right = 304.0
-offset_bottom = 62.0
-theme_override_constants/separation = 6
-alignment = 2
-
-[node name="Progress" type="Label" parent="Panel/Panel/HBoxContainer"]
-layout_mode = 2
-text = "23232"
-
-[node name="Label" type="Label" parent="Panel/Panel/HBoxContainer"]
-layout_mode = 2
-text = "/"
-
-[node name="Total" type="Label" parent="Panel/Panel/HBoxContainer"]
-layout_mode = 2
-text = "23232"
-
-[node name="Info_Container" type="Panel" parent="."]
-layout_mode = 0
-offset_left = -6.0
-offset_top = 84.0
-offset_right = 323.0
-offset_bottom = 133.0
+offset_left = 27.0
+offset_top = 99.0
+offset_right = 356.0
+offset_bottom = 148.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_fndv6")
 
-[node name="Level_count_container" type="Panel" parent="Info_Container"]
+[node name="Level_count_container" type="Panel" parent="InMatch/Info_Container"]
 z_index = 1
 layout_mode = 0
 offset_top = 2.0
@@ -161,7 +108,7 @@ offset_right = 53.0
 offset_bottom = 53.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_jhlej")
 
-[node name="Level_count" type="Label" parent="Info_Container/Level_count_container"]
+[node name="Level_count" type="Label" parent="InMatch/Info_Container/Level_count_container"]
 layout_mode = 0
 offset_left = 18.0
 offset_top = 10.0
@@ -175,7 +122,7 @@ vertical_alignment = 1
 text_overrun_behavior = 3
 uppercase = true
 
-[node name="Name_container" type="Panel" parent="Info_Container"]
+[node name="Name_container" type="Panel" parent="InMatch/Info_Container"]
 layout_mode = 0
 offset_left = 41.0
 offset_top = 9.0
@@ -183,7 +130,7 @@ offset_right = 260.0
 offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_8id86")
 
-[node name="Name" type="Label" parent="Info_Container/Name_container"]
+[node name="Name" type="Label" parent="InMatch/Info_Container/Name_container"]
 layout_mode = 0
 offset_left = 25.0
 offset_top = 2.0
@@ -191,3 +138,204 @@ offset_right = 208.0
 offset_bottom = 28.0
 text = "PYROMANCER"
 vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="InMatch"]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 361.0
+offset_bottom = 105.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_6pfn6")
+
+[node name="Panel" type="Panel" parent="InMatch/Panel2"]
+z_index = -1
+layout_mode = 0
+offset_left = 72.0
+offset_top = 25.0
+offset_right = 332.0
+offset_bottom = 81.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2o324")
+
+[node name="Avatar" type="Panel" parent="InMatch/Panel2/Panel"]
+visible = false
+layout_mode = 0
+offset_left = -49.0
+offset_top = 73.0
+offset_right = 9.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xnukc")
+
+[node name="Sprite2D" type="Sprite2D" parent="InMatch/Panel2/Panel/Avatar"]
+
+[node name="HealthbarPanel" type="Panel" parent="InMatch/Panel2/Panel"]
+clip_contents = true
+layout_mode = 0
+offset_left = 26.0
+offset_top = 5.0
+offset_right = 255.0
+offset_bottom = 50.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ou6gj")
+
+[node name="HealthBar" type="ProgressBar" parent="InMatch/Panel2/Panel/HealthbarPanel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 23.0
+offset_right = 227.0
+offset_bottom = 42.0
+theme_override_styles/background = SubResource("StyleBoxFlat_6ui88")
+theme_override_styles/fill = SubResource("StyleBoxTexture_bps84")
+max_value = 1e+09
+value = 1e+07
+show_percentage = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InMatch/Panel2/Panel"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 24.0
+offset_right = 247.0
+offset_bottom = 47.0
+theme_override_constants/separation = 6
+alignment = 2
+
+[node name="Progress" type="Label" parent="InMatch/Panel2/Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "23232"
+
+[node name="Label" type="Label" parent="InMatch/Panel2/Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "/"
+
+[node name="Total" type="Label" parent="InMatch/Panel2/Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "23232"
+
+[node name="PreBattle" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -10.0
+offset_top = -6.0
+offset_right = 414.0
+offset_bottom = 146.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_2eptl")
+
+[node name="Info_Container" type="Panel" parent="PreBattle"]
+layout_mode = 0
+offset_left = 80.0
+offset_right = 409.0
+offset_bottom = 49.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fndv6")
+
+[node name="Level_count_container" type="Panel" parent="PreBattle/Info_Container"]
+z_index = 1
+layout_mode = 0
+offset_top = 2.0
+offset_right = 53.0
+offset_bottom = 53.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_jhlej")
+
+[node name="Level_count" type="Label" parent="PreBattle/Info_Container/Level_count_container"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 10.0
+offset_right = 37.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "69"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+uppercase = true
+
+[node name="Name_container" type="Panel" parent="PreBattle/Info_Container"]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 9.0
+offset_right = 260.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8id86")
+
+[node name="Name" type="Label" parent="PreBattle/Info_Container/Name_container"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 2.0
+offset_right = 208.0
+offset_bottom = 28.0
+text = "PYROMANCER"
+vertical_alignment = 1
+
+[node name="PreBattleContainer" type="Panel" parent="PreBattle"]
+z_index = 1
+layout_mode = 0
+offset_left = -8.0
+offset_top = -20.0
+offset_right = 357.0
+offset_bottom = 149.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fg7vr")
+
+[node name="Panel" type="Panel" parent="PreBattle/PreBattleContainer"]
+z_index = -1
+layout_mode = 0
+offset_left = 116.0
+offset_top = 68.0
+offset_right = 363.0
+offset_bottom = 118.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2o324")
+
+[node name="Avatar" type="Panel" parent="PreBattle/PreBattleContainer/Panel"]
+visible = false
+layout_mode = 0
+offset_left = -49.0
+offset_top = 73.0
+offset_right = 9.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xnukc")
+
+[node name="Sprite2D" type="Sprite2D" parent="PreBattle/PreBattleContainer/Panel/Avatar"]
+
+[node name="HealthbarPanel" type="Panel" parent="PreBattle/PreBattleContainer/Panel"]
+clip_contents = true
+layout_mode = 0
+offset_left = 18.0
+offset_top = 5.0
+offset_right = 239.0
+offset_bottom = 45.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ou6gj")
+
+[node name="HealthBar" type="ProgressBar" parent="PreBattle/PreBattleContainer/Panel/HealthbarPanel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 21.0
+offset_right = 219.0
+offset_bottom = 38.0
+theme_override_styles/background = SubResource("StyleBoxFlat_6ui88")
+theme_override_styles/fill = SubResource("StyleBoxTexture_bps84")
+max_value = 1e+09
+value = 1e+07
+show_percentage = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PreBattle/PreBattleContainer/Panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 21.0
+offset_right = 232.0
+offset_bottom = 44.0
+theme_override_constants/separation = 6
+alignment = 2
+
+[node name="Progress" type="Label" parent="PreBattle/PreBattleContainer/Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "23232"
+
+[node name="Label" type="Label" parent="PreBattle/PreBattleContainer/Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "/"
+
+[node name="Total" type="Label" parent="PreBattle/PreBattleContainer/Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "23232"

@@ -43,6 +43,7 @@ grow_vertical = 2
 script = ExtResource("1_r37wq")
 
 [node name="Modal" type="Panel" parent="."]
+visible = false
 layout_mode = 0
 offset_left = -1.0
 offset_top = -1.0
@@ -51,6 +52,7 @@ offset_bottom = 647.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_smh1j")
 
 [node name="Modal_Md" type="PanelContainer" parent="Modal"]
+visible = false
 clip_contents = true
 layout_mode = 0
 offset_left = 360.0
@@ -98,6 +100,7 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_xq7nm")
 [node name="Modal_Lg" type="PanelContainer" parent="Modal"]
 visible = false
 clip_contents = true
+layout_mode = 0
 offset_left = 361.0
 offset_top = 53.0
 offset_right = 781.0
