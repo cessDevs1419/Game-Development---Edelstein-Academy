@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg7kklmlkark7"
-path="res://.godot/imported/Tile_Sample.png-c2c6d211b6a59221bae91c6b255fbc9a.ctex"
+uid="uid://ckpjp8nf6spht"
+path="res://.godot/imported/Modal_Bottom_Left_Border.png-b3879b7e8957a76b8a2adb0a3a7eedb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Tile_Sample.png"
-dest_files=["res://.godot/imported/Tile_Sample.png-c2c6d211b6a59221bae91c6b255fbc9a.ctex"]
+source_file="res://Assets/Sprites/Modal_Bottom_Left_Border.png"
+dest_files=["res://.godot/imported/Modal_Bottom_Left_Border.png-b3879b7e8957a76b8a2adb0a3a7eedb9.ctex"]
 
 [params]
 

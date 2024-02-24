@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg7kklmlkark7"
-path="res://.godot/imported/Tile_Sample.png-c2c6d211b6a59221bae91c6b255fbc9a.ctex"
+uid="uid://brlaogtggwm1o"
+path="res://.godot/imported/Gradient_border_Lg.png-dd516b4a2ed22924ffddf3bb6ff4aeb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Tile_Sample.png"
-dest_files=["res://.godot/imported/Tile_Sample.png-c2c6d211b6a59221bae91c6b255fbc9a.ctex"]
+source_file="res://Assets/Sprites/Gradient_border_Lg.png"
+dest_files=["res://.godot/imported/Gradient_border_Lg.png-dd516b4a2ed22924ffddf3bb6ff4aeb7.ctex"]
 
 [params]
 

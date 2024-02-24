@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg7kklmlkark7"
-path="res://.godot/imported/Tile_Sample.png-c2c6d211b6a59221bae91c6b255fbc9a.ctex"
+uid="uid://hm6l60fmj3le"
+path="res://.godot/imported/Modal_Center_Border.png-a6d28efe01779310168cf3fd8aade2ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Tile_Sample.png"
-dest_files=["res://.godot/imported/Tile_Sample.png-c2c6d211b6a59221bae91c6b255fbc9a.ctex"]
+source_file="res://Assets/Sprites/Modal_Center_Border.png"
+dest_files=["res://.godot/imported/Modal_Center_Border.png-a6d28efe01779310168cf3fd8aade2ce.ctex"]
 
 [params]
 
