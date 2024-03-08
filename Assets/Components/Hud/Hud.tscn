@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://ty4hmpdson08"]
+[gd_scene load_steps=23 format=3 uid="uid://ty4hmpdson08"]
 
 [ext_resource type="Script" path="res://Assets/Components/Hud/Hud.gd" id="1_g7qhv"]
 [ext_resource type="Texture2D" uid="uid://dglyu8qo2qsb5" path="res://Assets/Sprites/Hud_Border.png" id="2_72ew7"]
@@ -65,6 +65,8 @@ fill_to = Vector2(0.54717, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bps84"]
 texture = SubResource("GradientTexture2D_lwf3x")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkb3q"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2eptl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fg7vr"]
@@ -84,7 +86,6 @@ grow_vertical = 2
 script = ExtResource("1_g7qhv")
 
 [node name="InMatch" type="Panel" parent="."]
-visible = false
 layout_mode = 0
 offset_left = -9.0
 offset_top = -7.0
@@ -149,10 +150,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_6pfn6")
 [node name="Panel" type="Panel" parent="InMatch/Panel2"]
 z_index = -1
 layout_mode = 0
-offset_left = 72.0
-offset_top = 25.0
-offset_right = 332.0
-offset_bottom = 81.0
+offset_left = 18.0
+offset_top = 24.0
+offset_right = 278.0
+offset_bottom = 80.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_2o324")
 
 [node name="Avatar" type="Panel" parent="InMatch/Panel2/Panel"]
@@ -169,10 +170,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_xnukc")
 [node name="HealthbarPanel" type="Panel" parent="InMatch/Panel2/Panel"]
 clip_contents = true
 layout_mode = 0
-offset_left = 26.0
+offset_left = 14.0
 offset_top = 5.0
-offset_right = 255.0
-offset_bottom = 50.0
+offset_right = 242.0
+offset_bottom = 51.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_ou6gj")
 
 [node name="HealthBar" type="ProgressBar" parent="InMatch/Panel2/Panel/HealthbarPanel"]
@@ -189,10 +190,10 @@ show_percentage = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="InMatch/Panel2/Panel"]
 layout_mode = 0
-offset_left = 39.0
-offset_top = 24.0
-offset_right = 247.0
-offset_bottom = 47.0
+offset_left = 16.0
+offset_top = 25.0
+offset_right = 226.0
+offset_bottom = 48.0
 theme_override_constants/separation = 6
 alignment = 2
 
@@ -210,6 +211,14 @@ text = "/"
 layout_mode = 2
 theme_override_font_sizes/font_size = 15
 text = "23232"
+
+[node name="ColorAffinityPanel" type="Panel" parent="InMatch/Panel2/Panel"]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 5.0
+offset_right = 299.0
+offset_bottom = 50.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qkb3q")
 
 [node name="PreBattle" type="Panel" parent="."]
 visible = false

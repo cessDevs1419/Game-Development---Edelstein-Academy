@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc00a70h2tuv0"
-path="res://.godot/imported/Sample_Avatar.png-d28d2255f83c282774168f4d87214f27.ctex"
+uid="uid://vhnbm8sjui8o"
+path="res://.godot/imported/Turn_Bottom_Border.png-830c030ff8f60136a0dbba9d8e34a3b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Sample_Avatar.png"
-dest_files=["res://.godot/imported/Sample_Avatar.png-d28d2255f83c282774168f4d87214f27.ctex"]
+source_file="res://Assets/Sprites/Turn_Bottom_Border.png"
+dest_files=["res://.godot/imported/Turn_Bottom_Border.png-830c030ff8f60136a0dbba9d8e34a3b2.ctex"]
 
 [params]
 
