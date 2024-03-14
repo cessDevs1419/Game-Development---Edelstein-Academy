@@ -1,8 +1,7 @@
 extends Control
 
-var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 var main
-
+var pressed_font = load("res://Assets/Fonts/static/Alegreya-ExtraBold.ttf")
 
 func _ready():
 	main = get_node(".")
@@ -12,6 +11,18 @@ func _process(delta):
 	pass
 
 
-func _on_button_pressed():
+func load_game():
 	get_tree().change_scene_to_file("res://Ui/PreBattle/PreBattle.tscn")
+	
+	pass 
+
+
+func new_game():
+
+	pass 
+	
+func settings():
+	pass 
+
+func credits():
 	pass 

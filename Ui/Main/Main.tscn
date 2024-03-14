@@ -1,6 +1,59 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyrabjlwyj8e"]
+[gd_scene load_steps=18 format=3 uid="uid://dyrabjlwyj8e"]
 
 [ext_resource type="Script" path="res://Ui/Main/Main.gd" id="1_qd45a"]
+[ext_resource type="Texture2D" uid="uid://11ligqdessy5" path="res://Assets/Sprites/StartScreenBg.png" id="2_tr5ck"]
+[ext_resource type="FontFile" uid="uid://bva5f1jhbtgtq" path="res://Assets/Fonts/static/Alegreya-Medium.ttf" id="3_ckk6x"]
+[ext_resource type="Texture2D" uid="uid://bk5ja0cw0nug" path="res://Assets/Sprites/StartScreenTitle.png" id="3_e8sn0"]
+[ext_resource type="Texture2D" uid="uid://dcwvu5135elpf" path="res://Assets/Sprites/StartScreenButtonBgNormal.png" id="3_fkjic"]
+[ext_resource type="Texture2D" uid="uid://ciq7li1vypvg2" path="res://Assets/Sprites/StartScreenButtonBg.png" id="4_bbxgl"]
+
+[sub_resource type="Theme" id="Theme_6tpql"]
+
+[sub_resource type="Theme" id="Theme_hlew6"]
+default_font = ExtResource("3_ckk6x")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fcf8o"]
+texture = ExtResource("3_fkjic")
+texture_margin_top = 5.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lkxk0"]
+texture = ExtResource("4_bbxgl")
+texture_margin_top = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_11fpi"]
+texture = ExtResource("3_fkjic")
+texture_margin_top = 5.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pkdlx"]
+texture = ExtResource("4_bbxgl")
+texture_margin_top = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fj6sv"]
+texture = ExtResource("3_fkjic")
+texture_margin_top = 5.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x0s0h"]
+texture = ExtResource("4_bbxgl")
+texture_margin_top = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8j1ke"]
+texture = ExtResource("3_fkjic")
+texture_margin_top = 5.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sf3y0"]
+texture = ExtResource("4_bbxgl")
+texture_margin_top = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6gwoe"]
+texture = ExtResource("3_e8sn0")
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -11,30 +64,91 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qd45a")
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 458.0
-offset_top = 420.0
-offset_right = 693.0
-offset_bottom = 507.0
-text = "START"
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 277.0
-offset_top = 227.0
-offset_right = 887.0
-offset_bottom = 311.0
-theme_override_font_sizes/font_size = 60
-text = "EDELSTEIN ACADEMY"
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1156.0
+offset_bottom = 646.0
+theme = SubResource("Theme_6tpql")
 
-[node name="Label2" type="Label" parent="."]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 447.0
-offset_top = 326.0
-offset_right = 704.0
-offset_bottom = 382.0
-theme_override_font_sizes/font_size = 30
-text = "Please Press Start"
+offset_left = -15.0
+offset_top = -17.0
+offset_right = 1170.0
+offset_bottom = 665.0
+texture = ExtResource("2_tr5ck")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -236.0
+offset_top = -284.0
+offset_right = 237.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_hlew6")
+theme_override_constants/separation = 10
+
+[node name="Load" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.709804, 0.686275, 0.662745, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ckk6x")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_fcf8o")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lkxk0")
+text = "Load Game"
+
+[node name="New" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.709804, 0.686275, 0.662745, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ckk6x")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_11fpi")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pkdlx")
+text = "New Game"
+
+[node name="Settings" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.709804, 0.686275, 0.662745, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ckk6x")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_fj6sv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x0s0h")
+text = "Settings"
+
+[node name="Credits" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.709804, 0.686275, 0.662745, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ckk6x")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_8j1ke")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sf3y0")
+text = "Credits"
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -358.0
+offset_top = 111.0
+offset_right = 363.0
+offset_bottom = 323.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6gwoe")
+
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Load" to="." method="load_game"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/New" to="." method="new_game"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Settings" to="." method="settings"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Credits" to="." method="settings"]
