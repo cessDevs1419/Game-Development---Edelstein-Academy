@@ -124,6 +124,7 @@ theme_override_fonts/font = ExtResource("3_ckk6x")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxTexture_fj6sv")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_x0s0h")
+action_mode = 0
 text = "Settings"
 
 [node name="Credits" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
