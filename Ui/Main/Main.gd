@@ -19,12 +19,12 @@ func _process(delta):
 
 
 func load_game():
-	get_tree().change_scene_to_file("res://Ui/PreBattle/PreBattlePortal.tscn")
+	get_tree().change_scene_to_file("res://Ui/SelectionScene/WorldSelection.tscn")
 	pass 
 
 
 func new_game():
-	
+	get_tree().change_scene_to_file("res://Ui/SelectionScene/WorldSelection.tscn")
 	pass 
 	
 func settings():

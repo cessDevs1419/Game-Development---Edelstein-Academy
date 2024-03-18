@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2l60vj4386mo"]
+
+[ext_resource type="Script" path="res://Ui/SelectionScene/WorldSelection.gd" id="1_xro1e"]
+[ext_resource type="Texture2D" uid="uid://c1vh4fwas4xuj" path="res://Assets/Sprites/SelectionBg.png" id="2_kfqee"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtfxq"]
+bg_color = Color(0, 0, 0, 0.462745)
+anti_aliasing_size = 1.312
+
+[node name="WorldSelection" type="Node2D"]
+script = ExtResource("1_xro1e")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = -10.0
+offset_top = -7.0
+offset_right = 1162.0
+offset_bottom = 665.0
+texture = ExtResource("2_kfqee")
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="CanvasLayer/TextureRect"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 7.0
+offset_right = 1168.0
+offset_bottom = 663.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qtfxq")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer/TextureRect/Panel"]
+
+[node name="Panel" type="PanelContainer" parent="CanvasLayer/TextureRect/Panel/TouchScreenButton"]
+offset_left = 26.0
+offset_top = 24.0
+offset_right = 66.0
+offset_bottom = 64.0

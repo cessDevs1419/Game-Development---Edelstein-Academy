@@ -131,14 +131,15 @@ offset_left = 58.0
 offset_top = 163.0
 offset_right = 302.0
 offset_bottom = 203.0
-theme_override_constants/separation = 10
+theme_override_constants/separation = 100
+alignment = 1
 
 [node name="BgMusic" type="Panel" parent="Panel/ModalContainer/Container"]
 layout_mode = 0
-offset_left = 259.0
-offset_top = 45.0
-offset_right = 303.0
-offset_bottom = 68.0
+offset_left = 277.0
+offset_top = 46.0
+offset_right = 321.0
+offset_bottom = 69.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_jwxc5")
 
 [node name="CheckButton" type="CheckButton" parent="Panel/ModalContainer/Container/BgMusic"]
@@ -154,10 +155,10 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_lccgh")
 
 [node name="SoundEffects" type="Panel" parent="Panel/ModalContainer/Container"]
 layout_mode = 0
-offset_left = 259.0
-offset_top = 85.0
-offset_right = 303.0
-offset_bottom = 108.0
+offset_left = 278.0
+offset_top = 86.0
+offset_right = 322.0
+offset_bottom = 109.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_jwxc5")
 
 [node name="CheckButton" type="CheckButton" parent="Panel/ModalContainer/Container/SoundEffects"]
@@ -173,10 +174,10 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_lccgh")
 
 [node name="Notifications" type="Panel" parent="Panel/ModalContainer/Container"]
 layout_mode = 0
-offset_left = 259.0
-offset_top = 126.0
-offset_right = 303.0
-offset_bottom = 149.0
+offset_left = 279.0
+offset_top = 125.0
+offset_right = 323.0
+offset_bottom = 148.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_jwxc5")
 
 [node name="CheckButton" type="CheckButton" parent="Panel/ModalContainer/Container/Notifications"]
@@ -192,32 +193,32 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_lccgh")
 
 [node name="Label" type="Label" parent="Panel/ModalContainer/Container"]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 46.0
-offset_right = 197.0
-offset_bottom = 69.0
+offset_left = 40.0
+offset_top = 45.0
+offset_right = 183.0
+offset_bottom = 68.0
 theme_override_fonts/font = ExtResource("9_eedjw")
 text = "Background Music"
 
 [node name="Label2" type="Label" parent="Panel/ModalContainer/Container"]
 layout_mode = 0
-offset_left = 55.0
+offset_left = 41.0
 offset_top = 86.0
-offset_right = 198.0
+offset_right = 184.0
 offset_bottom = 109.0
 theme_override_fonts/font = ExtResource("9_eedjw")
 text = "Sound Effects"
 
 [node name="Label3" type="Label" parent="Panel/ModalContainer/Container"]
 layout_mode = 0
-offset_left = 56.0
+offset_left = 40.0
 offset_top = 126.0
-offset_right = 199.0
+offset_right = 183.0
 offset_bottom = 149.0
 theme_override_fonts/font = ExtResource("9_eedjw")
 text = "Notifications"
 
-[connection signal="pressed" from="Panel/ModalContainer/Header/Button" to="." method="return_press"]
+[connection signal="pressed" from="Panel/ModalContainer/Header/Button" to="." method="show_modal"]
 [connection signal="toggled" from="Panel/ModalContainer/Container/BgMusic/CheckButton" to="." method="_on_bg_music_toggled"]
 [connection signal="toggled" from="Panel/ModalContainer/Container/BgMusic/CheckButton" to="." method="_on_check_button_toggled"]
 [connection signal="toggled" from="Panel/ModalContainer/Container/SoundEffects/CheckButton" to="." method="_on_sound_effects_toggled"]

@@ -2,14 +2,8 @@ extends TextureButton
 
 var btn_texture
 
-
-
 func _ready():
 	pass 
-	
-func _pressed():
-	print('kwan')
-	pass
 
 func icon(icon: String):
 	match icon:
@@ -17,9 +11,17 @@ func icon(icon: String):
 			texture_normal = preload("res://Assets/Sprites/Setting.png")
 		"profile":
 			texture_normal = preload("res://Assets/Sprites/Avatar.png")
+		"return":
+			texture_normal = preload("res://Assets/Sprites/back.png")
 		"default":
 			texture_normal = preload("res://Assets/Sprites/Avatar.png")
 	pass
 
 func _process(delta):
 	pass
+	
+
+
+func _on_pressed():
+	print('kwan')
+	pass 

@@ -14,7 +14,15 @@ func _ready():
 	seffects = $Panel/ModalContainer/Container/SoundEffects/CheckButton
 	notifications = $Panel/ModalContainer/Container/Notifications/CheckButton
 	hbox = $Panel/ModalContainer/Container/HBoxContainer
-
+	var btnSupport = buttons.instantiate()
+	var btnCredits = buttons.instantiate()
+	var btnSave = buttons.instantiate()
+	hbox.add_child(btnSupport)
+	hbox.add_child(btnCredits)
+	hbox.add_child(btnSave)
+	btnSupport.button_text('Support')
+	btnCredits.button_text('Credits')
+	btnSave.button_text('Save/Load')
 	pass 
 
 
@@ -22,13 +30,9 @@ func _process(delta):
 	pass
 
 func show_modal():
-	modal.visible = true
+	modal.visible = !modal.visible
 pass 
 	
-func return_press():
-	modal.visible = false
-pass 
-
 
 func _on_bg_music_toggled(toggled_on):
 	if toggled_on:
