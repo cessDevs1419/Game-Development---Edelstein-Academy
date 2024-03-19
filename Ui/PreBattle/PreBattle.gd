@@ -22,10 +22,15 @@ func _ready():
 	hbox_container = $CanvasLayer/HBoxContainer
 	avatar_icon = Image.load_from_file("res://Assets/Sprites/Sample_Avatar.png")
 	tile_icon = Image.load_from_file("res://Assets/Sprites/Tile_Sample.png")
+	characters = [
+		{"id": "123", "name": "John", "level": 42, "avatar": "res://assets/sprites/sample_avatar.png"},
+		{"id": "124", "name": "Jane", "level": 35, "avatar": "res://assets/sprites/sample_avatar.png"},
+		{"id": "125", "name": "Jennifer", "level": 69, "avatar": "res://assets/sprites/sample_avatar.png"},
+	]
 	
 	ui.add_child(status_bar)
 	ui.add_child(headers)
-	ui.add_child(overview_panel)
+	#ui.add_child(overview_panel)
 	ui.add_child(tile)
 	
 	
@@ -33,11 +38,6 @@ func _ready():
 	#ui.add_child(modal)
 	
 	#sample array
-	characters = [
-		{"id": "123", "name": "John", "level": 42, "avatar": "res://assets/sprites/sample_avatar.png"},
-		{"id": "124", "name": "Jane", "level": 35, "avatar": "res://assets/sprites/sample_avatar.png"},
-		{"id": "125", "name": "Jennifer", "level": 69, "avatar": "res://assets/sprites/sample_avatar.png"},
-	]
 	
 	var button2 = button_icons.instantiate()
 	button2.icon("profile")
@@ -55,8 +55,8 @@ func _ready():
 	#headers.change_label('Begin Match')
 	
 	#Overview panel
-	overview_panel.deployed_content(20,40)
-	overview_panel.character_panel_content(59, characters)
+	#overview_panel.deployed_content(20,40)
+	#overview_panel.character_panel_content(59, characters)
 	
 	#tile container
 	tile.tile_types(tile_icon)

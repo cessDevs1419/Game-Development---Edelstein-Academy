@@ -14,6 +14,7 @@ var preGamePanel
 var inMatchPanel
 var preGame
 var inMatch
+var colorPanel 
 
 var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 
@@ -28,6 +29,7 @@ func _ready():
 	inMatch = get_node("InMatch")
 	preGamePanel = get_node("PreBattle/PreBattleContainer")
 	inMatchPanel = get_node("InMatch/Panel2")
+	colorPanel = get_node("InMatch/Panel2/Panel/ColorAffinityPanel")
 	update_top_range(30)
 	pass
 	
@@ -42,6 +44,11 @@ func update_avatar(avatar_path):
 func update_contents(nameValue: String, lvlcountValue:String):
 	global_function.update_contents(namenode, nameValue, lvlcountnode, lvlcountValue)
 
+
+func update_color(colorHex: String):
+	pass
+
+	
 func update_range(value: int, max: int):
 	progress.text = str(value)
 	total.text = str(max)
@@ -82,3 +89,4 @@ func use_in_match():
 	total = get_node("PreBattle/PreBattleContainer/Panel/HBoxContainer/Total")
 	avatars = get_node("PreBattle/PreBattleContainer/Panel/Avatar/Sprite2D")
 	healthbar = get_node("PreBattle/PreBattleContainer/Panel/HealthbarPanel/HealthBar")
+	colorPanel = get_node("InMatch/Panel2/Panel/ColorAffinityPanel")

@@ -1,17 +1,35 @@
 extends Control
 
-var global_function = preload("res://Assets/Scripts/Functions.gd").new()
 var main
+var pressed_font = load("res://Assets/Fonts/static/Alegreya-ExtraBold.ttf")
+var settingsmodal
 
+var ui
+@onready var modal = preload("res://Assets/Components/SettingsModal/Settings.tscn").instantiate()
 
 func _ready():
 	main = get_node(".")
+	ui = $CanvasLayer
+	ui.add_child(modal)
+	
 	pass 
 
 func _process(delta):
 	pass
 
 
-func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Ui/PreBattle/PreBattle.tscn")
+func load_game():
+	get_tree().change_scene_to_file("res://Ui/SelectionScene/WorldSelection.tscn")
+	pass 
+
+
+func new_game():
+	get_tree().change_scene_to_file("res://Ui/SelectionScene/WorldSelection.tscn")
+	pass 
+	
+func settings():
+	modal.show_modal()
+	pass 
+
+func credits():
 	pass 
