@@ -22,7 +22,8 @@ func prepareUnits():
 	enemyUnit.global_position = currentMap.map_to_local(Vector2(9, 0))
 
 func _input(event):
-	if event.is_action_pressed("LeftClick"):
+	# added a check for movement engine to prevent a unit's move from being skipped
+	if event.is_action_pressed("LeftClick") and movementEngine.unitIsMoving == false:
 		# Get unit in current turn
 		var currentUnit: CharacterBody2D = turnBaseEngine.getUnitInTurn()
 		

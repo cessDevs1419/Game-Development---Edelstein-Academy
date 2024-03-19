@@ -8,6 +8,8 @@ var currentPath: Array[Vector2i]
 
 var currentUnitInTurn: CharacterBody2D
 
+var unitIsMoving: bool = false
+
 func _ready():
 	astarGrid = AStarGrid2D.new()
 	astarGrid.region = currentMap.get_used_rect()
@@ -16,6 +18,10 @@ func _ready():
 	astarGrid.update()
 
 func moveUnit(unit: CharacterBody2D, targetPosition: Vector2):
+	# Prevent a unit from moving if another unit is moving
+	if unitIsMoving:
+		return
+	
 	currentUnitInTurn = unit
 	
 	# Get current unit position and convert it to currentMap position
@@ -29,12 +35,15 @@ func moveUnit(unit: CharacterBody2D, targetPosition: Vector2):
 	
 	if idPath.is_empty() == false:
 		currentPath = idPath
-	
-	# Move the unit
-	# unit.global_position = convertedTargetPosition
+		
+		# Indicate that a unit is moving
+		unitIsMoving = true;
 
+# This functions handles the actual movement of the unit.
 func _physics_process(delta):
 	if currentPath.is_empty():
+		# Indicate that a unit has stopped moving
+		unitIsMoving = false;
 		return
 		
 	var targetPosition = currentMap.map_to_local(currentPath.front())
