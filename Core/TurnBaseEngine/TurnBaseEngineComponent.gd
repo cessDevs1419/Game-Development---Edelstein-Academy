@@ -9,8 +9,7 @@ var current: int = 0;
 # Turn Number (for info only)
 var turnNumber: int = 1;
 
-var rng = RandomNumberGenerator.new()
-
+# Add a unit to the turn queue
 func addUnit(unit: CharacterBody2D):
 	units.append(unit)
 
@@ -25,13 +24,13 @@ func nextUnitTurn():
 	current += 1
 	
 	if (current > units.size() - 1):
-		# Start a new turn
 		_nextTurn()
 		
 		current = 0
-	
+
 func getCurrentTurnCount() -> int:
 	return turnNumber
 
+# Starts a new turn
 func _nextTurn():
 	turnNumber += 1

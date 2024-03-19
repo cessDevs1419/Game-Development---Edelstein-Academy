@@ -1,12 +1,12 @@
 extends Node2D
 
-@onready var turnBaseEngine: TurnBaseEngine = $TurnBaseEngineComponent
-@onready var movementEngine: MovementEngine = $MovementEngineCompoment
+@onready var turnBaseEngine: TurnBaseEngine = $Components/TurnBaseEngineComponent
+@onready var movementEngine: MovementEngine = $Components/MovementEngineCompoment
 
-@onready var friendlyUnit: CharacterBody2D = $FriendlyUnit
-@onready var enemyUnit: CharacterBody2D = $EnemyUnit
+@onready var friendlyUnit: CharacterBody2D = $Units/FriendlyUnit
+@onready var enemyUnit: CharacterBody2D = $Units/EnemyUnit
 
-@onready var currentMap: TileMap = $SandboxTileMap
+@onready var currentMap: TileMap = $Maps/SandboxTileMap
 
 func _ready():
 	turnBaseEngine.addUnit(friendlyUnit)
@@ -29,6 +29,3 @@ func _input(event):
 		
 		# Move unit
 		movementEngine.moveUnit(currentUnit, get_global_mouse_position())
-		
-		# End currentUnit's turn
-		turnBaseEngine.nextUnitTurn()

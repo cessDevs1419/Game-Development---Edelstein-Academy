@@ -10,21 +10,27 @@
 [node name="Sandbox" type="Node2D"]
 script = ExtResource("1_4idls")
 
-[node name="TurnBaseEngineComponent" parent="." instance=ExtResource("2_6mcwf")]
-
-[node name="MovementEngineCompoment" parent="." node_paths=PackedStringArray("currentMap") instance=ExtResource("3_f0scg")]
-currentMap = NodePath("../SandboxTileMap")
-
-[node name="SandboxTileMap" parent="." instance=ExtResource("1_4mxyu")]
-position = Vector2(-6.27815, -2.2995)
-script = ExtResource("2_clvjn")
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(744, 463)
 zoom = Vector2(0.3, 0.3)
 
-[node name="FriendlyUnit" parent="." instance=ExtResource("5_dn406")]
-position = Vector2(-1646, -1082)
+[node name="Components" type="Node" parent="."]
 
-[node name="EnemyUnit" parent="." instance=ExtResource("5_dn406")]
+[node name="MovementEngineCompoment" parent="Components" node_paths=PackedStringArray("currentMap") instance=ExtResource("3_f0scg")]
+currentMap = NodePath("../../Maps/SandboxTileMap")
+
+[node name="TurnBaseEngineComponent" parent="Components" instance=ExtResource("2_6mcwf")]
+
+[node name="Maps" type="Node" parent="."]
+
+[node name="SandboxTileMap" parent="Maps" instance=ExtResource("1_4mxyu")]
+position = Vector2(-6.27815, -2.2995)
+script = ExtResource("2_clvjn")
+
+[node name="Units" type="Node" parent="."]
+
+[node name="EnemyUnit" parent="Units" instance=ExtResource("5_dn406")]
 position = Vector2(-1404, -1089)
+
+[node name="FriendlyUnit" parent="Units" instance=ExtResource("5_dn406")]
+position = Vector2(-1646, -1082)
