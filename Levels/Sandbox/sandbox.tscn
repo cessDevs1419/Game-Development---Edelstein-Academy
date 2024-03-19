@@ -1,19 +1,23 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkqgvxuh62xyv"]
+[gd_scene load_steps=7 format=3 uid="uid://dkqgvxuh62xyv"]
 
 [ext_resource type="Script" path="res://Levels/Sandbox/sandbox.gd" id="1_4idls"]
 [ext_resource type="PackedScene" uid="uid://b4rld4i4ulysp" path="res://Levels/Sandbox/tilemap_sandbox.tscn" id="1_4mxyu"]
+[ext_resource type="PackedScene" uid="uid://bgy3grll146m1" path="res://Core/TurnBaseEngine/TurnBaseEngineComponent.tscn" id="2_6mcwf"]
 [ext_resource type="Script" path="res://Levels/Sandbox/tilemap_sandbox.gd" id="2_clvjn"]
-[ext_resource type="PackedScene" uid="uid://dkne4ko1ipwwa" path="res://Core/TileMaps/Indicators/IndicatorTileMap.tscn" id="4_w3hbw"]
+[ext_resource type="PackedScene" uid="uid://dcbtkaubaiplu" path="res://Core/MovementEngine/MovementEngineCompoment.tscn" id="3_f0scg"]
 [ext_resource type="PackedScene" uid="uid://06a8hnrjwtxy" path="res://Characters/Unit/Unit.tscn" id="5_dn406"]
 
 [node name="Sandbox" type="Node2D"]
 script = ExtResource("1_4idls")
 
+[node name="TurnBaseEngineComponent" parent="." instance=ExtResource("2_6mcwf")]
+
+[node name="MovementEngineCompoment" parent="." node_paths=PackedStringArray("currentMap") instance=ExtResource("3_f0scg")]
+currentMap = NodePath("../SandboxTileMap")
+
 [node name="SandboxTileMap" parent="." instance=ExtResource("1_4mxyu")]
 position = Vector2(-6.27815, -2.2995)
 script = ExtResource("2_clvjn")
-
-[node name="IndicatorTileMap" parent="." instance=ExtResource("4_w3hbw")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(744, 463)
@@ -24,6 +28,3 @@ position = Vector2(-1646, -1082)
 
 [node name="EnemyUnit" parent="." instance=ExtResource("5_dn406")]
 position = Vector2(-1404, -1089)
-
-[connection signal="unit_clicked" from="FriendlyUnit" to="." method="_on_friendly_unit_unit_clicked"]
-[connection signal="unit_clicked" from="EnemyUnit" to="." method="_on_friendly_unit_unit_clicked"]
