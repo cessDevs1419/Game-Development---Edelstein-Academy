@@ -1,7 +1,7 @@
 extends Node2D
 class_name TurnBaseEngine
 
-var units : Array
+var units : Array[CharacterBody2D]
 
 # Used to identify unit that can move for the turn.
 var current: int = 0;
